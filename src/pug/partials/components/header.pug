@@ -1,0 +1,31 @@
+include ../../_paths.pug 
+
+header.header
+    nav.nav 
+        ul.nav__logo
+            li 
+                a(href='#')
+                    img(src=`${paths.img.img}/logo.svg`, alt="logo")
+        ul.nav__list 
+            li
+                a(href="#") About Us
+            li
+                a(href="#") Services
+            li
+                a(href="#") Work
+            li
+                a(href="#") News
+            li
+                a(href="#") Contacts
+        ul.nav__feedback 
+            li
+                img(src=`${paths.img.icons}/phone-icon.svg`, alt="phone")
+                div
+                    p Call us
+                    a(href="tel:+4055550128") (405) 555-0128
+            li
+                img(src=`${paths.img.icons}/chat-icon.svg`, alt="chat")
+                div
+                    p Talk to us
+                    a(href="mailto:hello@createx.com") hello@createx.com
+include ../../partials/components/burger.pug

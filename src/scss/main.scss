@@ -1,0 +1,22 @@
+@use "sass:map";
+@use "base/reset" as *;
+@use "base/vars" as vars;
+@use "mixins";
+@use "components";
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
