@@ -31,13 +31,18 @@ include ../../_paths.pug
                                     span Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.
                         .top__rightside 
                             .top__subscribe
-                                h4.top__form-title Let’s stay in touch
-                                form.top__form
-                                    .top__form-wrap 
-                                        input(type="text", name="mail", placeholder="Your email address ")
+                                h4.form-footer-title Let’s stay in touch
+                                form.form-footer
+                                    .form-wrap 
+                                        .form__input-wrap
+                                            input(type="text", name="mail", placeholder="Your email address ", class="form__input form__input--lite")
+                                            img.form__input-img.form__input--success-img(src=`${paths.img.icons}/done-mark.svg` alt="success")
+                                            img.form__input-img.form__input--danger-img(src=`${paths.img.icons}/danger-icon.svg` alt="danger")
                                         button(type="submit" class="button") subscribe
-                                    span *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
-                .middle 
+                                    span.form__message.form__message--success Looks good!
+                                    span.form__message.form__message--danger Please provide a valid input.
+                                span.form__desc *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
+                .middle             
                     .middle__block
                         .contacts 
                             h6.contacts__title.middle__title HEAD OFFICE

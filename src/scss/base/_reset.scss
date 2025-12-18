@@ -80,6 +80,8 @@ textarea {
     color: inherit;
     border: none;
     outline: none;
+    resize: none;
+    field-sizing: content;
 }
 
 button {

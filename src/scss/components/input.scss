@@ -1,0 +1,123 @@
+@use 'sass:map';
+@use '../base/vars' as *;
+
+.form {
+    &__input {
+        width: 100%;
+        height: 100%;
+        padding: 13px 16px;
+        background-color: map.get($colors, input-bg);
+        border: 1px solid map.get($colors, input-border);
+        border-radius: 4px;
+        color: map.get($colors, input-color);
+
+        &--checkbox {
+            position: absolute;
+            opacity: 0;
+
+            &:checked+label .box {
+                background-color: map.get($colors, orange);
+                border: none;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &--textarea {
+            min-height: 66px;
+        }
+
+        &--lite {
+            background-color: map.get($colors, input-lite-bg);
+            border: 1px solid map.get($colors, input-lite-border);
+            color: map.get($colors, input-lite-color);
+
+        }
+
+        &::placeholder {
+            color: map.get($colors, input-placeholder);
+        }
+
+        &:focus {
+            background-color: map.get($colors, white);
+            border: 1px solid map.get($colors, orange-opacity);
+            box-shadow:
+                0 7px 70px -39px map.get($colors, orange),
+                0 0px 10px 0px map.get($colors, orange);
+        }
+
+        &:disabled {
+            color: map.get($colors, input-placeholder);
+            background-color: #f8f9fa;
+            border: 1px solid #e7e9eb;
+        }
+
+        &-wrap {
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        &--wrong {
+            border: 1px solid map.get($colors, danger)
+        }
+
+        &-img {
+            display: none;
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__message {
+        display: block;
+        font-size: 12px;
+        margin-top: 10px;
+
+        &--success {
+            display: none;
+            color: map.get($colors, green);
+        }
+
+        &--danger {
+            display: none;
+            color: map.get($colors, danger);
+
+        }
+    }
+
+    &__label {
+        &--checkbox {
+            .box {
+                display: inline-block;
+                position: relative;
+                width: 100%;
+                max-width: 16px;
+                height: 16px;
+                border: 1px solid #b3b7bc;
+                border-radius: 4px;
+
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    display: block;
+                    top: 50%;
+                    left: 41%;
+                    transform: translate(-25%, -25%);
+                    background-image: url('/img/icons/check-icon.svg');
+                    background-repeat: no-repeat;
+                    z-index: 1;
+                    opacity: 0;
+                }
+
+            }
+        }
+    }
+}
