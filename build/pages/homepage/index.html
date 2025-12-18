@@ -7,48 +7,77 @@
     <title>Document</title>
   </head>
   <body> 
-    <div class="container">
-      <header class="header">
-        <nav class="nav"> 
-          <ul class="nav__logo">
-            <li> <a href="#"><img src="/img/logo.svg" alt="logo"></a></li>
-          </ul>
-          <ul class="nav__list"> 
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
-          <ul class="nav__feedback"> 
-            <li><img src="/img/icons/phone-icon.svg" alt="phone">
-              <div>
-                <p>Call us</p><a href="tel:+4055550128">(405) 555-0128</a>
+    <footer class="footer"> 
+      <div class="container">
+        <div class="footer__wrap"> 
+          <div class="top"> 
+            <div class="top__wrap"> 
+              <div class="top__leftside"> 
+                <div class="top__links"> 
+                  <div class="top__links-wrap"> <a class="top__logo" href="#"><img src="/img/footer-logo.svg" alt="logo"></a>
+                    <div class="socials"> 
+                      <ul class="socials__list"> 
+                        <li class="social__link"><a href="#"><img src="/img/icons/whatsapp-icon.svg" alt="whatsapp"></a></li>
+                        <li class="social__link"><a href="#"><img src="/img/icons/messanger-icon.svg" alt="messenger"></a></li>
+                        <li class="social__link"><a href="#"><img src="/img/icons/facebook-icon.svg" alt="facebook"></a></li>
+                        <li class="social__link"><a href="#"><img src="/img/icons/twitter-icon.svg" alt="twitter"></a></li>
+                        <li class="social__link"><a href="#"><img src="/img/icons/youtube-icon.svg" alt="youtube"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="top__links-desc"><span>Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.</span></div>
+                </div>
               </div>
-            </li>
-            <li><img src="/img/icons/chat-icon.svg" alt="chat">
-              <div>
-                <p>Talk to us</p><a href="mailto:hello@createx.com">hello@createx.com</a>
+              <div class="top__rightside"> 
+                <div class="top__subscribe">
+                  <h4 class="top__form-title">Let’s stay in touch</h4>
+                  <form class="top__form">
+                    <div class="top__form-wrap"> 
+                      <input type="text" name="mail" placeholder="Your email address ">
+                      <button type="submit">subscribe</button>
+                    </div><span>*Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.</span>
+                  </form>
+                </div>
               </div>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="menu-container">
-        <button class="burger-toggle" aria-label="Открыть меню">&#x2630;</button>
-        <div class="overlay"></div>
-        <nav class="sidebar-menu">
-          <ul>
-            <li class="sidebar-link"><a href="#">About Us</a></li>
-            <li class="sidebar-link"><a href="#">Services</a></li>
-            <li class="sidebar-link"><a href="#">Work</a></li>
-            <li class="sidebar-link"><a href="#">News</a></li>
-            <li class="sidebar-link"><a href="tel:+4055550128">Call us</a></li>
-            <li class="sidebar-link"><a href="mailto:hello@createx.com">Talk to us</a></li>
-          </ul>
-        </nav>
+            </div>
+          </div>
+          <div class="middle"> 
+            <div class="middle__block">
+              <div class="contacts"> 
+                <h6 class="contacts__title middle__title">HEAD OFFICE</h6>
+                <ul class="contacts__list middle__list"> 
+                  <li class="contacts__item middle__item"><span>Address: </span><a href="#">8502 Preston Rd. Inglewood, New York</a></li>
+                  <li class="contacts__item middle__item"><span>Call:</span><a href="tel:+4055550128">(405) 555-0128</a></li>
+                  <li class="contacts__item middle__item"><span>Email:</span><a href="mailto:hello@createx.com">hello@createx.com</a></li>
+                </ul>
+              </div>
+              <div class="about"> 
+                <h6 class="about__title middle__title">WHO WE ARE</h6>
+                <ul class="about__list middle__list"> 
+                  <li class="about__item middle__item"><a href="#">About Us</a></li>
+                  <li class="about__item middle__item"><a href="#">Available Positions</a></li>
+                  <li class="about__item middle__item"><a href="#">Contacts</a></li>
+                </ul>
+              </div>
+              <div class="exp">
+                <h6 class="exp__title middle__title">OUR EXPERIENCE</h6>
+                <ul class="exp__list middle__list"> 
+                  <li class="expt__item middle__item"><a href="#">Services</a></li>
+                  <li class="exp__item middle__item"><a href="#">Work</a></li>
+                  <li class="exp__item middle__item"><a href="#">News</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="bottom__copyright"> <span>&copy; All rights reserved. Made with &#160  <img src="/img/icons/heart.svg" alt="heart">&#160 by Createx Studio</span></div>
+            <div class="bottom__to-up"> <span>GO TO TOP</span>
+              <button><img src="/img/icons/arrow-icon.svg" alt="top-arrow"></button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
     <script type="module" src="/js/homepage/main.js"> </script>
   </body>
 </html>

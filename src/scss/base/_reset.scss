@@ -45,6 +45,7 @@ dd {
 ul[role="list"],
 ol[role="list"],
 ul,
+li,
 ol {
     margin: 0;
     padding: 0;
@@ -77,6 +78,8 @@ select,
 textarea {
     font: inherit;
     color: inherit;
+    border: none;
+    outline: none;
 }
 
 button {

@@ -1,0 +1,81 @@
+include ../../_paths.pug 
+
+    footer.footer 
+        .container
+            .footer__wrap 
+                .top 
+                    .top__wrap  
+                        .top__leftside  
+                            .top__links 
+                                .top__links-wrap 
+                                    a(href="#" class="top__logo")
+                                        img(src=`${paths.img.img}/footer-logo.svg`, alt="logo") 
+                                    .socials 
+                                        ul.socials__list 
+                                            li.social__link
+                                                a(href="#")
+                                                    img(src=`${paths.img.icons}/whatsapp-icon.svg`, alt="whatsapp")
+                                            li.social__link
+                                                a(href="#")
+                                                    img(src=`${paths.img.icons}/messanger-icon.svg`, alt="messenger")
+                                            li.social__link
+                                                a(href="#")
+                                                    img(src=`${paths.img.icons}/facebook-icon.svg`, alt="facebook")
+                                            li.social__link
+                                                a(href="#")
+                                                    img(src=`${paths.img.icons}/twitter-icon.svg`, alt="twitter")
+                                            li.social__link
+                                                a(href="#")
+                                                    img(src=`${paths.img.icons}/youtube-icon.svg`, alt="youtube")
+                                .top__links-desc
+                                    span Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.
+                        .top__rightside 
+                            .top__subscribe
+                                h4.top__form-title Let’s stay in touch
+                                form.top__form
+                                    .top__form-wrap 
+                                        input(type="text", name="mail", placeholder="Your email address ")
+                                        button(type="submit") subscribe
+                                    span *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
+                .middle 
+                    .middle__block
+                        .contacts 
+                            h6.contacts__title.middle__title HEAD OFFICE
+                            ul.contacts__list.middle__list 
+                                li.contacts__item.middle__item
+                                    span Address: 
+                                    a(href="#") 8502 Preston Rd. Inglewood, New York
+                                li.contacts__item.middle__item
+                                    span Call:
+                                    a(href="tel:+4055550128") (405) 555-0128
+                                li.contacts__item.middle__item
+                                    span Email:
+                                    a(href="mailto:hello@createx.com") hello@createx.com
+                        .about 
+                            h6.about__title.middle__title WHO WE ARE
+                            ul.about__list.middle__list 
+                                li.about__item.middle__item
+                                    a(href="#") About Us
+                                li.about__item.middle__item
+                                    a(href="#") Available Positions
+                                li.about__item.middle__item
+                                    a(href="#") Contacts
+                        .exp
+                            h6.exp__title.middle__title OUR EXPERIENCE
+                            ul.exp__list.middle__list 
+                                li.expt__item.middle__item
+                                    a(href="#") Services
+                                li.exp__item.middle__item
+                                    a(href="#") Work
+                                li.exp__item.middle__item
+                                    a(href="#") News
+                .bottom
+                    .bottom__copyright 
+                        span
+                            | &copy; All rights reserved. Made with &#160  
+                            img(src=`${paths.img.icons}/heart.svg`, alt='heart')
+                            | &#160 by Createx Studio
+                    .bottom__to-up  
+                        span GO TO TOP
+                        button
+                            img(src=`${paths.img.icons}/arrow-icon.svg`, alt="top-arrow")
