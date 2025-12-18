@@ -1,0 +1,43 @@
+@use 'sass:map';
+@use '../base/vars' as *;
+
+.button {
+    background-color: map.get($colors, orange);
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+
+    &:hover,
+    &:active {
+        background-color: map.get($colors, red);
+    }
+
+    &:disabled {
+        background-color: map.get($colors, orange-disabled);
+    }
+
+    &--outline {
+        cursor: pointer;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: transparent;
+        color: map.get($colors, orange);
+        border: 1px solid map.get($colors, orange);
+
+        &:hover,
+        &:active {
+            background-color: map.get($colors, orange);
+            color: map.get($colors, white);
+
+        }
+
+        &:disabled {
+            color: map.get($colors, orange-disabled);
+            border: 1px solid map.get($colors, orange-disabled);
+        }
+    }
+}

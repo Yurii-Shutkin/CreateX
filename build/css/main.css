@@ -144,6 +144,39 @@ pre {
   font-size: 0.95em;
 }
 
+.button {
+  background-color: #FF5A30;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+}
+.button:hover, .button:active {
+  background-color: #FC3300;
+}
+.button:disabled {
+  background-color: #ffac97;
+}
+.button--outline {
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  color: #FF5A30;
+  border: 1px solid #FF5A30;
+}
+.button--outline:hover, .button--outline:active {
+  background-color: #FF5A30;
+  color: #fff;
+}
+.button--outline:disabled {
+  color: #ffac97;
+  border: 1px solid #ffac97;
+}
+
 .header {
   background-color: transparent;
   padding: 28px 0;
@@ -355,16 +388,12 @@ pre {
   border-right: none;
   padding: 12px 0 12px 16px;
 }
-.footer .top__form button {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
+.footer .top__form .button {
   border-radius: 0 4px 4px 0;
   padding: 13px 24px;
-  background-color: #FF5A30;
 }
 @media (max-width: 425px) {
-  .footer .top__form button {
+  .footer .top__form .button {
     padding: 13px 10px;
   }
 }
@@ -444,11 +473,8 @@ pre {
     display: none;
   }
 }
-.footer .bottom__to-up button {
-  background-color: #FF5A30;
+.footer .bottom__to-up .button {
   padding: 15px 12px;
-  cursor: pointer;
-  border-radius: 4px;
 }
 
 html {
