@@ -4,6 +4,15 @@
 
 .banner {
     color: map.get($colors, white);
+    margin-bottom: 125px;
+
+    @include respond-to(tablet-l) {
+        margin-bottom: 80px;
+    }
+
+    @include respond-to(mobile) {
+        margin-bottom: 40px;
+    }
 
     &__slides {
         position: relative;
