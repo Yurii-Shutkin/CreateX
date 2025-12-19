@@ -4,6 +4,8 @@
 @use "mixins";
 @use "components";
 
+@use './pages/homepage/main.scss';
+
 html {
     width: 100%;
 }

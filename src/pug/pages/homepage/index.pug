@@ -6,11 +6,15 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href=`${paths.css}`)
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css')
         title Document
     body 
         
-        //- include ../../partials/components/header.pug
-        include ../../partials/components/form.pug
-        //- include ../../partials/components/footer.pug
+        include ../../partials/components/header.pug
+        include ./banner.pug
 
-        //- script(type="module", src=`${paths.js}/homepage/main.js`) 
+        //- include ../../partials/components/form.pug
+        include ../../partials/components/footer.pug
+        script(src='https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js')
+        script(type="module", src=`${paths.js}/homepage/main.js`)
+        script(type="module", src=`${paths.js}/homepage/swiper.js`)

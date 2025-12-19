@@ -1,0 +1,16 @@
+include ../../_paths.pug
+
+mixin swiper(slides, className="banner__swiper")
+  .swiper(class=className)
+    .swiper-wrapper
+        each slide in slides
+            .swiper-slide
+                .banner__img-wrap
+                    img(src=slide.img, class="banner__img")
+                    .container
+                        .banner__content
+                            h1(class="banner__title") !{slide.title}
+                            span(class="banner__desc")= slide.desc
+                            .banner__btns 
+                                button(class="banner__button banner__button--lite button--lite")= slide.lsBtnContent
+                                button(class="banner__button button")= slide.rsBtnContent

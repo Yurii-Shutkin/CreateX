@@ -179,6 +179,13 @@ pre {
   color: #ffac97;
   border: 1px solid #ffac97;
 }
+.button--lite {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
 
 .form__input {
   width: 100%;
@@ -625,6 +632,228 @@ pre {
   padding: 14px 32px;
   margin: -9px auto 0;
   font-size: 14px;
+}
+
+.round-btn {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+}
+.round-btn--left {
+  transform: rotate(180deg);
+}
+.round-btn img {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.round-btn:hover {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .round-btn {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.swiper-controls {
+  padding: 0 32px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+@media (max-width: 576px) {
+  .swiper-controls {
+    display: none;
+  }
+}
+.swiper-pagination-custom {
+  --swiper-pagination-top: auto;
+  --swiper-pagination-bottom: 121px;
+  left: auto !important;
+  width: 70% !important;
+}
+@media (max-width: 768px) {
+  .swiper-pagination-custom {
+    --swiper-pagination-bottom: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .swiper-pagination-custom {
+    --swiper-pagination-bottom: 25px;
+  }
+}
+
+.custom-pagination {
+  position: absolute;
+  display: flex;
+  gap: 4px;
+}
+
+.pagination-item {
+  width: 100%;
+  max-width: 178px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: start;
+}
+@media (max-width: 768px) {
+  .pagination-item {
+    font-size: 17px;
+    max-width: 70px;
+  }
+}
+
+.pagination-item .line {
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 13px;
+}
+@media (max-width: 768px) {
+  .pagination-item .line {
+    margin-top: 2px;
+  }
+}
+
+.pagination-item.active {
+  color: #fff;
+}
+
+.pagination-item.active .line {
+  background: #fff;
+}
+
+.banner {
+  color: #fff;
+}
+.banner__slides {
+  position: relative;
+}
+.banner__img-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 987px;
+}
+.banner__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.banner__img-wrap::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(30, 33, 44, 0.3764705882);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 768px) {
+  .banner__img-wrap {
+    height: 500px;
+  }
+}
+@media (max-width: 425px) {
+  .banner__img-wrap {
+    height: 390px;
+  }
+}
+.banner__content {
+  width: 100%;
+  max-width: 600px;
+  position: absolute;
+  padding: 221px 0 120px 0;
+  top: 0;
+  z-index: 999;
+}
+@media (max-width: 1440px) {
+  .banner__content {
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .banner__content {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 425px) {
+  .banner__content {
+    max-width: 260px;
+  }
+}
+.banner__title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.31;
+  margin-bottom: 23px;
+}
+.banner__title span {
+  color: #FF5A30;
+}
+@media (max-width: 768px) {
+  .banner__title {
+    font-size: 45px;
+  }
+}
+@media (max-width: 425px) {
+  .banner__title {
+    font-size: 32px;
+  }
+}
+.banner__desc {
+  display: block;
+  width: 100%;
+  max-width: 595px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  margin-bottom: 61px;
+}
+@media (max-width: 768px) {
+  .banner__desc {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .banner__desc {
+    font-size: 11px;
+  }
+}
+.banner__button {
+  padding: 16px 42px;
+}
+@media (max-width: 768px) {
+  .banner__button {
+    padding: 12px 16px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 425px) {
+  .banner__button {
+    font-size: 8px;
+  }
+}
+.banner__button--lite {
+  margin-right: 16px;
 }
 
 html {
