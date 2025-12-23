@@ -4,7 +4,11 @@
     width: 100%;
     max-width: fit-content;
     text-align: center;
-    margin: 0 auto 120px;
+    margin: 0 auto 125px;
+
+    @include respond-to(mobile) {
+        margin-bottom: 40px;
+    }
 
     &__title {
         font-size: 46px;
