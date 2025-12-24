@@ -4,8 +4,8 @@ const projectSwiper = new Swiper('.projects__swiper', {
   loop: true,
 
   navigation: {
-    nextEl: '.btn-next',
-    prevEl: '.btn-prev',
+    nextEl: '.projects__navigation--right',
+    prevEl: '.projects__navigation--left',
   },
 
   breakpoints: {

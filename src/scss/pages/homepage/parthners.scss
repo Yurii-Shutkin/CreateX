@@ -1,0 +1,223 @@
+@use '../../mixins/respond-to.scss' as *;
+
+.partners {
+    padding: 80px 0 0 0;
+    background-color: #F4F5F6;
+    margin-bottom: -178px;
+
+    @include respond-to(laptop-m) {
+        margin-bottom: 0;
+        padding-bottom: 66px;
+    }
+
+    @include respond-to(mobile) {
+        padding-top: 46px;
+    }
+
+    &__title {
+        font-size: 46px;
+        text-align: center;
+        margin-bottom: 60px;
+
+        @include respond-to(mobile) {
+            font-size: 35px;
+            margin-bottom: 39px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 188px;
+
+        @include respond-to(laptop-m) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 110px;
+            gap: 20px;
+        }
+
+        @include respond-to(tablet) {
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        @include respond-to(mobile) {
+            margin-bottom: 63px;
+        }
+    }
+
+    &__item {
+        svg {
+            path {
+                fill: #BDBDBD;
+            }
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: #f15656;
+                }
+            }
+        }
+
+        @include respond-to(laptop-m) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__wrap {
+        width: 120px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include respond-to(mobile) {
+            height: 40px;
+            width: 90px;
+        }
+    }
+
+}
+
+.testimonials {
+
+    &__title {
+        font-size: 46px;
+        margin-bottom: 60px;
+
+        @include respond-to(mobile) {
+            font-size: 32px;
+            margin-bottom: 29px;
+            text-align: center;
+        }
+    }
+
+    &__sub-wrapper {
+        position: relative;
+    }
+
+    &__content-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slider {
+        width: 100%;
+        max-width: 614px;
+        overflow: hidden;
+
+        @include respond-to(laptop-m) {
+            max-width: 1160px;
+            margin-bottom: 21px;
+        }
+
+        @include respond-to(tablet-l) {
+            max-width: 650px;
+            overflow: visible;
+        }
+
+        @include respond-to(tablet) {
+            max-width: 450px;
+            overflow: visible;
+        }
+
+        @include respond-to(mobile) {
+            max-width: 260px;
+            overflow: visible;
+        }
+
+    }
+
+    &__navigation {
+        position: absolute;
+        right: 0;
+
+        @include respond-to(laptop-m) {
+            left: 0;
+        }
+
+    }
+
+    &__img-wrapper {
+        position: relative;
+        bottom: 116px;
+
+        @include respond-to(laptop-m) {
+            display: none;
+        }
+    }
+}
+
+.testimonial-card {
+    &__avatar {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 24px;
+        background-color: #fe6262;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        @include respond-to(mobile) {
+            height: 50px;
+            width: 50px;
+            margin-bottom: 18px;
+        }
+
+        &--green {
+            background-color: #a9ff91;
+        }
+
+        &--orange {
+            background-color: #ffe791;
+
+        }
+
+        &--blue {
+            background-color: #91adff;
+
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        color: #424551;
+        margin-bottom: 29px;
+        line-height: 1.55;
+
+        @include respond-to(mobile) {
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__name {
+        font-size: 16px;
+        font-weight: 700;
+        color: #1E212C;
+        margin-bottom: 8px;
+
+        @include respond-to(mobile) {
+            font-size: 13px;
+        }
+    }
+
+    &__position {
+        font-size: 14px;
+        font-weight: 400;
+        color: #787A80;
+
+        @include respond-to(mobile) {
+            font-size: 11px;
+        }
+    }
+}

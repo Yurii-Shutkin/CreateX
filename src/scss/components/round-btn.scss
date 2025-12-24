@@ -25,6 +25,10 @@
         }
     }
 
+    &--unbordered {
+        background-color: transparent;
+    }
+
     &--left {
         transform: rotate(180deg);
     }

@@ -655,6 +655,9 @@ pre {
 .round-btn--orange:hover svg path, .round-btn--orange:active svg path {
   fill: #fff;
 }
+.round-btn--unbordered {
+  background-color: transparent;
+}
 .round-btn--left {
   transform: rotate(180deg);
 }
@@ -1365,6 +1368,212 @@ pre {
 .projects__portfolio-link {
   display: inline-block;
   padding: 16px 40px;
+}
+
+.partners {
+  padding: 80px 0 0 0;
+  background-color: #F4F5F6;
+  margin-bottom: -178px;
+}
+@media (max-width: 1200px) {
+  .partners {
+    margin-bottom: 0;
+    padding-bottom: 66px;
+  }
+}
+@media (max-width: 425px) {
+  .partners {
+    padding-top: 46px;
+  }
+}
+.partners__title {
+  font-size: 46px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media (max-width: 425px) {
+  .partners__title {
+    font-size: 35px;
+    margin-bottom: 39px;
+  }
+}
+.partners__box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 188px;
+}
+@media (max-width: 1200px) {
+  .partners__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 110px;
+    gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .partners__box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 425px) {
+  .partners__box {
+    margin-bottom: 63px;
+  }
+}
+.partners__item svg path {
+  fill: #BDBDBD;
+}
+.partners__item:hover svg path {
+  fill: #f15656;
+}
+@media (max-width: 1200px) {
+  .partners__item {
+    display: flex;
+    justify-content: center;
+  }
+}
+.partners__wrap {
+  width: 120px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 425px) {
+  .partners__wrap {
+    height: 40px;
+    width: 90px;
+  }
+}
+
+.testimonials__title {
+  font-size: 46px;
+  margin-bottom: 60px;
+}
+@media (max-width: 425px) {
+  .testimonials__title {
+    font-size: 32px;
+    margin-bottom: 29px;
+    text-align: center;
+  }
+}
+.testimonials__sub-wrapper {
+  position: relative;
+}
+.testimonials__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials__slider {
+  width: 100%;
+  max-width: 614px;
+  overflow: hidden;
+}
+@media (max-width: 1200px) {
+  .testimonials__slider {
+    max-width: 1160px;
+    margin-bottom: 21px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonials__slider {
+    max-width: 650px;
+    overflow: visible;
+  }
+}
+@media (max-width: 576px) {
+  .testimonials__slider {
+    max-width: 450px;
+    overflow: visible;
+  }
+}
+@media (max-width: 425px) {
+  .testimonials__slider {
+    max-width: 260px;
+    overflow: visible;
+  }
+}
+.testimonials__navigation {
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 1200px) {
+  .testimonials__navigation {
+    left: 0;
+  }
+}
+.testimonials__img-wrapper {
+  position: relative;
+  bottom: 116px;
+}
+@media (max-width: 1200px) {
+  .testimonials__img-wrapper {
+    display: none;
+  }
+}
+
+.testimonial-card__avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  background-color: #fe6262;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 425px) {
+  .testimonial-card__avatar {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 18px;
+  }
+}
+.testimonial-card__avatar--green {
+  background-color: #a9ff91;
+}
+.testimonial-card__avatar--orange {
+  background-color: #ffe791;
+}
+.testimonial-card__avatar--blue {
+  background-color: #91adff;
+}
+.testimonial-card__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #424551;
+  margin-bottom: 29px;
+  line-height: 1.55;
+}
+@media (max-width: 425px) {
+  .testimonial-card__text {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}
+.testimonial-card__name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1E212C;
+  margin-bottom: 8px;
+}
+@media (max-width: 425px) {
+  .testimonial-card__name {
+    font-size: 13px;
+  }
+}
+.testimonial-card__position {
+  font-size: 14px;
+  font-weight: 400;
+  color: #787A80;
+}
+@media (max-width: 425px) {
+  .testimonial-card__position {
+    font-size: 11px;
+  }
 }
 
 html {
