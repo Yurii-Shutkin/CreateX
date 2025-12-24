@@ -16,6 +16,7 @@
         padding: 48px 60px;
         max-width: unset;
         z-index: 2;
+        background-color: #fff;
 
         @include respond-to(mobile) {
             padding: 38px 0;

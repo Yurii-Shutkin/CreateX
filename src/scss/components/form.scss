@@ -4,6 +4,8 @@
 .form {
     padding: 80px 0;
     background-image: url('/img/homepage/form/form-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__wrap {
         border: 1px solid red;

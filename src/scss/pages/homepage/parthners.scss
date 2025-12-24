@@ -145,6 +145,7 @@
     &__img-wrapper {
         position: relative;
         bottom: 116px;
+        z-index: 2;
 
         @include respond-to(laptop-m) {
             display: none;

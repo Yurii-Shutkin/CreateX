@@ -581,6 +581,8 @@ pre {
 .form {
   padding: 80px 0;
   background-image: url("/img/homepage/form/form-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .form__wrap {
   border: 1px solid red;
@@ -1023,6 +1025,7 @@ pre {
   padding: 48px 60px;
   max-width: unset;
   z-index: 2;
+  background-color: #fff;
 }
 @media (max-width: 425px) {
   .feedback__form {
@@ -1505,6 +1508,7 @@ pre {
 .testimonials__img-wrapper {
   position: relative;
   bottom: 116px;
+  z-index: 2;
 }
 @media (max-width: 1200px) {
   .testimonials__img-wrapper {
@@ -1574,6 +1578,132 @@ pre {
   .testimonial-card__position {
     font-size: 11px;
   }
+}
+
+@property --percent {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+.stats {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  padding: 185px 0 180px 0;
+}
+@media (max-width: 576px) {
+  .stats {
+    padding: 90px 0;
+  }
+}
+.stats__bg {
+  position: absolute;
+  top: -260px;
+  left: -580px;
+}
+.stats__title {
+  font-size: 46px;
+  margin-bottom: 60px;
+}
+@media (max-width: 576px) {
+  .stats__title {
+    font-size: 32px;
+  }
+}
+.stats__list {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+@keyframes progress {
+  from {
+    --percent: 0%;
+  }
+  to {
+    --percent: var(--target-percent);
+  }
+}
+.stats__item.is-visible .stats__circle-border::after {
+  opacity: 1;
+  animation: progress 1.2s ease-out forwards;
+}
+.stats__item.is-visible .stats__circle-border--orange::after {
+  --target-percent: 98%;
+  color: #f89828;
+}
+.stats__item.is-visible .stats__circle-border--pink::after {
+  --target-percent: 20%;
+  color: #f52f6e;
+}
+.stats__item.is-visible .stats__circle-border--blue::after {
+  --target-percent: 75%;
+  color: #5a87fc;
+}
+.stats__item.is-visible .stats__circle-border--green::after {
+  --target-percent: 100%;
+  color: #03cea4;
+}
+.stats__circle-border {
+  position: relative;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.stats__circle-border::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  border: inherit;
+  border-radius: inherit;
+  inset: 0;
+  opacity: 0;
+  background: conic-gradient(currentColor var(--percent), transparent 0);
+  transition: opacity 0.3s;
+}
+.stats__circle-border--orange {
+  background: #fde8bf;
+  color: #f89828;
+  --target-percent: 98%;
+}
+.stats__circle-border--pink {
+  background: #fcc1d3;
+  color: #f52f6e;
+  --target-percent: 20%;
+}
+.stats__circle-border--blue {
+  background: #cddbfe;
+  color: #5a87fc;
+  --target-percent: 75%;
+}
+.stats__circle-border--green {
+  background: #a0eddd;
+  color: #03cea4;
+  --target-percent: 100%;
+}
+.stats__circle {
+  position: relative;
+  width: 139px;
+  height: 139px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.stats__desc {
+  font-size: 14px;
+  color: #1E212C;
 }
 
 html {
