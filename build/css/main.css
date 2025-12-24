@@ -579,15 +579,19 @@ pre {
 }
 
 .form {
+  padding: 80px 0;
+  background-image: url("/img/homepage/form/form-bg.jpg");
+}
+.form__wrap {
   border: 1px solid red;
-  margin: 0 auto;
   padding: 52px 40px 47px;
   width: 100%;
   max-width: 495px;
   border-radius: 4px;
   background-color: #fff;
-  border: 1px solid e5e8ed;
+  border: 1px solid #e5e8ed;
   box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.0196078431), 0 12px 10px -6px rgba(30, 33, 44, 0.031372549);
+  margin-left: auto;
 }
 .form__title {
   font-size: 28px;

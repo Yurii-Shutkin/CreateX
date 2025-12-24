@@ -2,17 +2,22 @@
 @use '../base/vars' as *;
 
 .form {
-    border: 1px solid red;
-    margin: 0 auto;
-    padding: 52px 40px 47px;
-    width: 100%;
-    max-width: 495px;
-    border-radius: 4px;
-    background-color: map.get($colors, white);
-    border: 1px solid e5e8ed;
-    box-shadow:
-        0 4px 4px -4px #1e212c05,
-        0 12px 10px -6px #1e212c08;
+    padding: 80px 0;
+    background-image: url('/img/homepage/form/form-bg.jpg');
+
+    &__wrap {
+        border: 1px solid red;
+        padding: 52px 40px 47px;
+        width: 100%;
+        max-width: 495px;
+        border-radius: 4px;
+        background-color: map.get($colors, white);
+        border: 1px solid #e5e8ed;
+        box-shadow:
+            0 4px 4px -4px #1e212c05,
+            0 12px 10px -6px #1e212c08;
+        margin-left: auto;
+    }
 
     &__title {
         font-size: 28px;
