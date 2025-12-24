@@ -10,6 +10,21 @@
     background-color: map.get($colors, white);
     opacity: .5;
 
+    &--orange {
+        background-color: transparent;
+
+        &:hover,
+        &:active {
+            background-color: map.get($colors, orange);
+
+            svg {
+                path {
+                    fill: map.get($colors, white);
+                }
+            }
+        }
+    }
+
     &--left {
         transform: rotate(180deg);
     }
@@ -19,6 +34,17 @@
         top: 50%;
         right: 50%;
         transform: translate(50%, -50%);
+    }
+
+    svg {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+        path {
+            fill: #424551;
+        }
     }
 
     &:hover {

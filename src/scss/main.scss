@@ -8,11 +8,13 @@
 
 html {
     width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     font-family: "Ubuntu", sans-serif;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
