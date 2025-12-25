@@ -762,6 +762,207 @@ pre {
   background: #fff;
 }
 
+.news {
+  margin-bottom: 119px;
+}
+@media (max-width: 425px) {
+  .news {
+    margin-bottom: 80px;
+  }
+}
+.news__title {
+  font-size: 46px;
+  text-align: center;
+  margin-bottom: 62px;
+}
+@media (max-width: 576px) {
+  .news__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
+.news__wrap {
+  display: grid;
+  grid-template-columns: 1.425fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  margin-bottom: 81px;
+}
+@media (max-width: 1200px) {
+  .news__wrap {
+    grid-template-columns: unset;
+  }
+}
+@media (max-width: 425px) {
+  .news__wrap {
+    margin-bottom: 60px;
+  }
+}
+.news-post {
+  box-shadow: 0 4px 10px rgba(30, 33, 44, 0.1), 0 12px 20px rgba(162, 166, 179, 0.15);
+}
+.news-post__small-wrap {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+@media (max-width: 1200px) {
+  .news-post__small-wrap {
+    grid-template-rows: unset;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 992px) {
+  .news-post__small-wrap {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: unset;
+  }
+}
+.news-post__image {
+  width: 100%;
+  object-fit: cover;
+}
+.news-post__content {
+  margin-left: 24px;
+}
+@media (max-width: 768px) {
+  .news-post__content {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 425px) {
+  .news-post__content {
+    padding: 0 10px;
+  }
+}
+.news-post__title {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1E212C;
+}
+@media (max-width: 425px) {
+  .news-post__title {
+    font-size: 15px;
+  }
+}
+.news-post__meta {
+  font-size: 14px;
+  color: #787A80;
+}
+@media (max-width: 425px) {
+  .news-post__meta {
+    font-size: 9px;
+  }
+}
+.news-post__meta span {
+  border-right: 1px solid #787a80;
+  padding: 0 11px;
+}
+.news-post__meta span:last-child {
+  border-right: none;
+}
+.news-post__meta span:first-child {
+  padding-left: 0;
+}
+@media (max-width: 425px) {
+  .news-post__meta span {
+    padding: 0 3px 0 3px;
+  }
+}
+.news-post__meta img {
+  display: inline-block;
+  margin-left: 8px;
+}
+.news-post__excerpt {
+  line-height: 1.5;
+}
+@media (max-width: 425px) {
+  .news-post__excerpt {
+    font-size: 13px;
+  }
+}
+.news-post:hover .news-post__title {
+  color: #FF5A30;
+}
+.news-post--featured {
+  width: 100%;
+  max-width: 705px;
+  grid-column: 1/2;
+  grid-row: 1/span 2;
+  padding-bottom: 25px;
+}
+.news-post--featured .news-post__image-container {
+  margin-bottom: 28px;
+}
+.news-post--featured .news-post__title {
+  margin-bottom: 19px;
+}
+.news-post--featured .news-post__meta {
+  margin-bottom: 21px;
+}
+@media (max-width: 1200px) {
+  .news-post--featured {
+    max-width: unset;
+  }
+}
+.news-post--small {
+  width: 100%;
+  max-width: 495px;
+}
+.news-post--small .news-post__image-container {
+  margin-bottom: 20px;
+}
+.news-post--small .news-post__image {
+  max-height: 156px;
+}
+@media (max-width: 992px) {
+  .news-post--small .news-post__image {
+    max-height: 360px;
+  }
+}
+.news-post--small .news-post__title {
+  margin-bottom: 14px;
+}
+@media (max-width: 1200px) {
+  .news-post--small {
+    max-width: unset;
+    padding-bottom: 30px;
+  }
+}
+.news__link {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .news__link {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.news__link-title {
+  font-size: 28px;
+  color: #1E212C;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .news__link-title {
+    font-size: 25px;
+  }
+}
+.news__link-button {
+  display: block;
+  padding: 17px 42px;
+}
+@media (max-width: 576px) {
+  .news__link-button {
+    font-size: 11px;
+  }
+}
+
 .banner {
   color: #fff;
   margin-bottom: 125px;
@@ -1589,11 +1790,16 @@ pre {
   position: relative;
   background-color: #fff;
   text-align: center;
-  padding: 185px 0 180px 0;
+  padding: 185px 0 187px 0;
 }
 @media (max-width: 576px) {
   .stats {
     padding: 90px 0;
+  }
+}
+@media (max-width: 425px) {
+  .stats {
+    padding: 60px 0;
   }
 }
 .stats__bg {

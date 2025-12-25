@@ -1,0 +1,43 @@
+include ../../_paths.pug
+
+.container
+    .news 
+        h2.news__title Recent news
+        .news__wrap
+            .news-post__featured-wrap
+                .news-post.news-post--featured
+                    .news-post__image-container
+                        img.news-post__image(src=`${paths.img.img}/news/image-1.png`, alt='Featured article image')
+                    .news-post__content
+                        a(href="#", class="news-post__title") How to Build Climate Change-Resilient Infrastructure
+                        .news-post__meta
+                            span.news-post__category Industry News  
+                            span.news-post__date June 24, 2020  
+                            img(src=`${paths.img.icons}/chat-icon-mini.svg`, alt="chat-icon") 
+                            span.news-post__comments 4 comments 
+                        p.news-post__excerpt Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis....
+            .news-post__small-wrap
+                .news-post.news-post--small
+                    .news-post__image-container
+                        img.news-post__image(src=`${paths.img.img}/news/image-2.png`, alt='Small article image 1')
+                    .news-post__content
+                        a(href="#", class="news-post__title") How Construction Can Help Itself
+                        .news-post__meta
+                            span.news-post__category Innovation  
+                            span.news-post__date June 12, 2020  
+                            img(src=`${paths.img.icons}/chat-icon-mini.svg`, alt="chat-icon") 
+                            span.news-post__comments No comments
+
+                .news-post.news-post--small
+                    .news-post__image-container
+                        img.news-post__image(src=`${paths.img.img}/news/image-3.png`, alt='Small article image 2')
+                    .news-post__content
+                        a(href="#", class="news-post__title") Types of Flooring Materials
+                        .news-post__meta
+                            span.news-post__category Company News  
+                            span.news-post__date December 1, 2019  
+                            img(src=`${paths.img.icons}/chat-icon-mini.svg`, alt="chat-icon") 
+                            span.news-post__comments No comments
+        .news__link 
+            h3.news__link-title Explore all our news posts
+            a.news__link-button.button View all news

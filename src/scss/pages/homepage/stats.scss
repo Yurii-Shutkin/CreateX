@@ -10,10 +10,15 @@
     position: relative;
     background-color: #fff;
     text-align: center;
-    padding: 185px 0 180px 0;
+    padding: 185px 0 187px 0;
 
     @include respond-to(tablet) {
         padding: 90px 0;
+    }
+
+    @include respond-to(mobile) {
+        padding: 60px 0;
+
     }
 
     &__bg {
