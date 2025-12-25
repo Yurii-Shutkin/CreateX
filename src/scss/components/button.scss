@@ -48,5 +48,12 @@
         border: 1px solid map.get($colors, white);
         text-transform: uppercase;
         border-radius: 4px;
+
+        &:hover,
+        &:active {
+            background-color: #E5E8ED;
+            color: #424551;
+            border: none;
+        }
     }
 }

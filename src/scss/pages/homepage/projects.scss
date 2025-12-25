@@ -52,6 +52,7 @@
     &__slide {
         width: 100%;
         max-width: 390px;
+        cursor: grab;
 
         .project-card {
             position: relative;
@@ -86,6 +87,10 @@
                         transition-delay: .3s;
                     }
                 }
+            }
+
+            &:active {
+                cursor: grabbing;
             }
 
             &__image-wrapper {

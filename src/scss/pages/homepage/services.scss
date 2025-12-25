@@ -67,6 +67,7 @@
         background-repeat: no-repeat;
         display: flex;
         justify-content: center;
+        cursor: pointer;
         box-shadow:
             0 4px 4px -4px rgba(30, 33, 44, 0.03),
             0 12px 10px -6px rgba(154, 156, 165, 0.04);
@@ -95,7 +96,8 @@
             align-items: center;
             background-color: map.get($colors, white);
             width: 100%;
-            transition: background-color, color .3s ease;
+            transition: color .3s ease;
+            transition: all .3s ease;
 
             svg {
                 width: 52px;

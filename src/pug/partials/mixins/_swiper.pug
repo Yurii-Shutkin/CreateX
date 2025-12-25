@@ -12,5 +12,5 @@ mixin swiper(slides, className="banner__swiper")
                             h1(class="banner__title") !{slide.title}
                             span(class="banner__desc")= slide.desc
                             .banner__btns 
-                                button(class="banner__button banner__button--lite button--lite")= slide.lsBtnContent
-                                button(class="banner__button button")= slide.rsBtnContent
+                                a(class="banner__button banner__button--lite button--lite", href="/pages/homepage/about")= slide.lsBtnContent
+                                a(class="banner__button button", href="#feedback")= slide.rsBtnContent

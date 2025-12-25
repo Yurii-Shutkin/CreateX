@@ -10,6 +10,7 @@
         justify-content: space-between;
         top: 50%;
         transform: translateY(-50%);
+        pointer-events: none;
         z-index: 1;
 
         @include respond-to(tablet) {

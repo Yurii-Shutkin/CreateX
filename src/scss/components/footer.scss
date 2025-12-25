@@ -11,8 +11,14 @@
         padding: 45px 0;
     }
 
+    ul>li>a {
+        &:hover {
+            color: #fff;
+        }
+    }
+
     .top {
-        margin-bottom: 50px;
+        margin-bottom: 45px;
 
         &__wrap {
             display: flex;
@@ -27,7 +33,6 @@
         &__leftside {
             width: 100%;
             max-width: 494px;
-            // flex: 0 0 494px
         }
 
         &__rightside {
@@ -67,6 +72,12 @@
                 display: flex;
                 gap: 16px;
             }
+
+            .social__link {
+                &:hover {
+                    scale: 1.1;
+                }
+            }
         }
 
         .form-footer-title {
@@ -91,15 +102,16 @@
 
             .button {
                 border-radius: 0 4px 4px 0;
-                padding: 13px 24px;
+                padding: 13px 18px;
 
                 @include respond-to(mobile) {
-                    padding: 13px 10px;
+                    padding: 13px 19px;
                 }
             }
 
             .form__desc {
                 font-size: 12px;
+                line-height: 1.5;
                 color: map.get($colors, grey)
             }
         }

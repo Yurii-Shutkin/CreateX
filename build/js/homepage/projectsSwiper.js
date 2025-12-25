@@ -1,7 +1,7 @@
 const projectSwiper = new Swiper('.projects__swiper', {
   slidesPerView: 1,
   slidesPerGroup: 1,
-  loop: true,
+  // loop: true,
 
   navigation: {
     nextEl: '.projects__navigation--right',

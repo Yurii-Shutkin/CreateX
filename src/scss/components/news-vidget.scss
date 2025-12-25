@@ -25,7 +25,7 @@
         grid-template-columns: 1.425fr 1fr;
         grid-template-rows: auto auto;
         gap: 30px;
-        margin-bottom: 81px;
+        margin-bottom: 51px;
 
         @include respond-to(laptop-m) {
             grid-template-columns: unset;

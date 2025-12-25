@@ -9,12 +9,16 @@
 html {
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 body {
     font-family: "Ubuntu", sans-serif;
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 .container {

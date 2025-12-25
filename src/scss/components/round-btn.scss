@@ -9,6 +9,7 @@
     border-radius: 50%;
     background-color: map.get($colors, white);
     opacity: .5;
+    pointer-events: all;
 
     &--orange {
         background-color: transparent;
