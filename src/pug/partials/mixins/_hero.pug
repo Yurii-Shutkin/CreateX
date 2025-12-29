@@ -1,0 +1,12 @@
+mixin hero(content, className="hero")
+    .hero
+        img(src=content.imgUrl, alt="hero-img", class="hero__bg")
+        .container 
+            .hero__content
+                .hero__breadcrumbs-wrap
+                    span.hero__breadcrumbs= content.breadcrumbs 
+                    span.hero__breadcrumbs.hero__breadcrumbs--active= content.activeBreadcrumb
+                h1.hero__title= content.title
+                .hero__desc= content.desc
+
+        

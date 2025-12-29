@@ -1,0 +1,148 @@
+@use '../../../mixins/respond-to.scss' as *;
+
+.services-page {
+    padding: 120px 0 180px;
+    background-image: url("../img/bg-image.png");
+
+    @include respond-to(tablet) {
+        padding: 70px 0;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+
+        @include respond-to(tablet) {
+            gap: 50px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 80px;
+        align-items: center;
+
+        @include respond-to(laptop) {
+            flex-direction: column;
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+
+            @include respond-to(laptop) {
+                flex-direction: column;
+            }
+        }
+
+        margin: 0 auto;
+    }
+
+    &__img-wrap,
+    &__content {
+        flex: 1;
+    }
+
+    &__img-wrap {
+        @include respond-to(laptop) {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                background: #000;
+                opacity: .5;
+                width: inherit;
+                height: inherit;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        @include respond-to(tablet) {
+            display: none;
+            position: static;
+        }
+    }
+
+    &__content {
+        position: relative;
+        // padding: 20px 40px;
+
+        &-title {
+            font-size: 32px;
+            margin-bottom: 33px;
+            color: #1E212C;
+
+            @include respond-to(laptop) {
+                color: #fff;
+            }
+
+            @include respond-to(tablet) {
+                color: #1E212C;
+                margin-bottom: 24px;
+
+            }
+        }
+
+        &-desc {
+            font-size: 16px;
+            margin-bottom: 47px;
+            color: #787A80;
+            line-height: 1.7;
+
+            @include respond-to(laptop) {
+                color: #fff;
+            }
+
+            @include respond-to(tablet) {
+                color: #1E212C;
+                margin-bottom: 30px;
+            }
+        }
+
+        .button {
+            padding: 11px 25px;
+            display: inline-block;
+
+            &--outline {
+
+                @include respond-to(laptop) {
+                    display: none;
+                }
+
+                @include respond-to(tablet) {
+                    display: inline-block;
+
+                }
+            }
+
+            &--lite {
+                display: none;
+
+                @include respond-to(laptop) {
+                    display: inline-block;
+                }
+
+                @include respond-to(tablet) {
+                    display: none;
+                }
+            }
+        }
+
+        @include respond-to(laptop) {
+            position: absolute;
+            max-width: 500px;
+            padding: 50px 40px 20px 40px;
+        }
+
+        @include respond-to(tablet) {
+            padding: 0;
+            position: static;
+            max-width: unset;
+        }
+    }
+}

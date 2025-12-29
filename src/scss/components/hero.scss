@@ -1,0 +1,69 @@
+@use "../mixins/respond-to.scss" as *;
+
+.hero {
+    @include respond-to(tablet-l) {
+        height: 431px;
+        aspect-ratio: 16 / 9;
+    }
+
+    @include respond-to(tablet) {
+        height: 350px;
+    }
+
+    &__bg {
+        position: relative;
+        margin-left: auto;
+        z-index: -1;
+    }
+
+    &__content {
+        position: absolute;
+        top: 0;
+        padding: 152px 0 0 0;
+
+        @include respond-to(tablet-l) {
+            padding: 100px 0 0 0;
+        }
+    }
+
+    &__breadcrumbs {
+        font-size: 14px;
+        color: #424551;
+
+        &--active {
+            color: #9A9CA5
+        }
+
+        &-wrap {
+            margin-bottom: 50px;
+
+            @include respond-to(tablet-l) {
+                margin-bottom: 44px;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 72px;
+        color: #1E212C;
+        margin-bottom: 29px;
+
+        @include respond-to(tablet-l) {
+            font-size: 30px;
+            margin-bottom: 11px;
+        }
+    }
+
+    &__desc {
+        font-size: 20px;
+        color: #787A80;
+        width: 100%;
+        max-width: 600px;
+        line-height: 1.5;
+        padding-right: 10px;
+
+        @include respond-to(tablet-l) {
+            font-size: 15px;
+        }
+    }
+}

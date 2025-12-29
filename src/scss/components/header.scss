@@ -3,8 +3,10 @@
 @use '../base/vars' as *;
 
 .header {
+    position: relative;
     background-color: transparent;
     padding: 28px 0;
+    margin-bottom: -93px;
 
     .nav {
         display: flex;
