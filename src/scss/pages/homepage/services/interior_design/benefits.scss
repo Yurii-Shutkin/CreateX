@@ -1,0 +1,96 @@
+@use '../../../../mixins/respond-to.scss' as *;
+
+.benefits {
+    padding-top: 86px;
+    background-color: #1E212C;
+    color: #fff;
+    text-align: center;
+
+    &__title {
+        font-size: 46px;
+        margin-bottom: 28px;
+    }
+
+    &__desc {
+        display: block;
+        font-size: 18px;
+        opacity: 60%;
+        margin-bottom: 69px;
+    }
+
+    &__content {
+
+        &-wrap {
+            display: flex;
+            margin-bottom: 76px;
+
+            @include respond-to(laptop-m) {
+                display: grid;
+            }
+        }
+
+        &-item {
+            padding: 0 95px;
+            border-right: 1px solid transparent;
+            border-image: linear-gradient(#DADBDD 0%,
+                    #DADBDD 50%,
+                    #DADBDD 100%,
+                    #DADBDD 50%,
+                    #DADBDD 0%) 1;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+                border: none;
+            }
+
+            @include respond-to(laptop-m) {
+                border: unset;
+                border-image: unset;
+                padding: 0;
+                width: 100%;
+                max-width: 450px;
+                margin: 0 auto;
+                margin-bottom: 50px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-icon {
+            margin-bottom: 22px;
+            height: 48px;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        &-title {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        &-desc {
+            opacity: 60%;
+            font-size: 16px;
+            line-height: 160%;
+        }
+    }
+
+    &__button {
+        position: relative;
+        padding: 16px 112px;
+        bottom: -25px;
+
+        @include respond-to(laptop-m) {
+            padding: 16px 40px;
+        }
+    }
+}
