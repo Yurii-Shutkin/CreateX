@@ -2388,6 +2388,30 @@ pre {
   }
 }
 
+.related-projects {
+  max-width: 1230px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 185px 0 148px 0;
+}
+.related-projects__title {
+  font-size: 46px;
+  color: #1E212C;
+}
+.related-projects .projects__navigation {
+  right: -14px;
+  top: -33px;
+  margin-bottom: 10px;
+}
+.related-projects .projects__footer {
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .related-projects {
+    overflow: visible;
+  }
+}
+
 html {
   width: 100%;
   overflow-x: hidden;

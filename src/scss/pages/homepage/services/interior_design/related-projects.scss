@@ -1,0 +1,29 @@
+@use '../../../../mixins/respond-to.scss' as *;
+
+.related-projects {
+    max-width: 1230px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 185px 0 148px 0;
+
+    &__title {
+        font-size: 46px;
+        color: #1E212C;
+    }
+
+    .projects__navigation {
+        right: -14px;
+        top: -33px;
+        margin-bottom: 10px;
+    }
+
+    .projects__footer {
+        margin: 0 auto;
+
+
+    }
+
+    @include respond-to(laptop) {
+        overflow: visible;
+    }
+}
