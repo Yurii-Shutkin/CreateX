@@ -7,4 +7,5 @@
 @use 'parthners';
 @use 'stats';
 
-@use './services/main.scss';
+@use './services/main.scss' as servicesPage;
+@use './services/interior_design/main.scss' as interior_desing;
