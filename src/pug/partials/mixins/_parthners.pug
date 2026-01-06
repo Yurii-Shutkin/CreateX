@@ -1,0 +1,14 @@
+mixin parthners (content, titleKey, limit, mode, desc)
+    section.partners(class= mode)
+        .container
+            h2.partners__title= content.title[titleKey]
+            span.partners__decs= desc
+            .partners__box
+                if content.icons
+                    each iconCode in content.icons.slice(0, limit)
+                        .partners__item
+                            .partners__wrap
+                                a(href="#")
+                                    .partners__icon-holder!= iconCode
+
+                    

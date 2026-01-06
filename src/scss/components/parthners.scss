@@ -1,0 +1,87 @@
+@use '../mixins/respond-to.scss' as *;
+
+
+.partners {
+    padding: 80px 0 122px;
+    background-color: #fff;
+
+    &.grey-theme {
+        background-color: #F4F5F6;
+    }
+
+    @include respond-to(laptop-m) {
+        margin-bottom: 0;
+        padding-bottom: 66px;
+    }
+
+    @include respond-to(mobile) {
+        padding-top: 46px;
+    }
+
+    &__title {
+        font-size: 46px;
+        text-align: center;
+        margin-bottom: 60px;
+
+        @include respond-to(mobile) {
+            font-size: 35px;
+            margin-bottom: 39px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+
+        @include respond-to(laptop-m) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 110px;
+            gap: 20px;
+        }
+
+        @include respond-to(tablet) {
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        @include respond-to(mobile) {
+            margin-bottom: 63px;
+        }
+    }
+
+    &__item {
+        svg {
+            path {
+                fill: #BDBDBD;
+            }
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: #f15656;
+                }
+            }
+        }
+
+        @include respond-to(laptop-m) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__wrap {
+        width: 120px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include respond-to(mobile) {
+            height: 40px;
+            width: 90px;
+        }
+    }
+
+}
