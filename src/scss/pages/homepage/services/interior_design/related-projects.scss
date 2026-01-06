@@ -9,12 +9,35 @@
     &__title {
         font-size: 46px;
         color: #1E212C;
+
+        @include respond-to(tablet) {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
     }
 
     .projects__navigation {
         right: -14px;
         top: -33px;
         margin-bottom: 10px;
+
+        .round-btn {
+            width: 48px;
+            height: 48px;
+        }
+
+        @include respond-to(laptop-l) {
+            right: 25px;
+        }
+
+        @include respond-to(tablet) {
+            max-width: unset;
+            position: static;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 70px;
+        }
     }
 
     .projects__footer {

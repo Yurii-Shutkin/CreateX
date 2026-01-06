@@ -1,6 +1,14 @@
 @use '../../../../mixins/respond-to.scss' as *;
 
 .pricing {
+    position: relative;
+
+    .pricing__bg {
+        left: -580px;
+        position: absolute;
+        top: -260px;
+    }
+
     padding: 85px 0 45px 0;
     background-color: #F4F5F6;
 
