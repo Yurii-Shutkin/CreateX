@@ -1,0 +1,128 @@
+@use '../../../../mixins/respond-to.scss' as *;
+
+.pricing {
+    padding: 85px 0 120px 0;
+    background-color: #F4F5F6;
+
+    &__header {
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    &__title {
+        font-size: 46px;
+        margin-bottom: 29px;
+    }
+
+    &__desc {
+        font-size: 18px;
+        color: #787A80;
+    }
+
+    &__table {
+        border: 1px solid #E5E8ED;
+        border-radius: 5px;
+        box-shadow: (0 4px 4px -4px rgba(30, 33, 44, 0.031),
+                0 12px 10px -6px rgba(154, 156, 165, 0.039));
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        align-items: end;
+        font-size: 16px;
+        padding: 17px 0 17px 24px;
+        color: #424551;
+
+        @include respond-to(laptop) {
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-left: 0;
+        }
+
+        &:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        &--head {
+            padding: 37px 0 27px 0;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+
+            @include respond-to(laptop) {
+                font-size: 20px;
+            }
+
+            @include respond-to(mobile) {
+                font-size: 15px;
+            }
+
+            span {
+                font-size: 18px;
+                color: #787A80;
+                text-transform: none;
+
+                @include respond-to(laptop) {
+                    font-size: 14px;
+                }
+            }
+
+            .head-lite {
+                text-transform: none;
+                margin-left: 24px;
+                font-size: 18px;
+                text-align: left;
+
+                @include respond-to(laptop) {
+                    text-align: center;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &--actions {
+            padding: 34px 0;
+
+            .button--outline {
+                margin: 0 auto;
+                width: 100%;
+                max-width: 143px;
+                display: block;
+                padding: 11px 0;
+                font-size: 12px;
+
+                @include respond-to(laptop) {
+                    max-width: 120px;
+                }
+
+                @include respond-to(laptop) {
+                    max-width: 70px;
+                }
+            }
+        }
+
+
+    }
+
+    &__item {
+        @include respond-to(laptop) {
+            grid-column: 1 / 5;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+    }
+
+    &__cell {
+        text-align: center;
+
+        &--check {
+            margin: 0 auto;
+            width: 24px;
+            height: 24px;
+            background-color: #FF5A30;
+            mask: url("../img/interior-design/icons/done-icon.svg") center / contain no-repeat;
+        }
+    }
+}
