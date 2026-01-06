@@ -1,6 +1,10 @@
 @use "../mixins/respond-to.scss" as *;
 
 .hero {
+    position: relative;
+    background-color: #F4F5F6;
+    z-index: -1;
+
     @include respond-to(tablet-l) {
         height: 431px;
         aspect-ratio: 16 / 9;

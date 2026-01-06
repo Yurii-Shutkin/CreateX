@@ -3,9 +3,9 @@
 @use 'target';
 @use 'feedback';
 @use 'services';
-@use 'projects';
 @use 'testimonials';
 @use 'stats';
 
 @use './services/main.scss' as servicesPage;
 @use './services/interior_design/main.scss' as interior_desing;
+@use './work/main.scss' as work_page;

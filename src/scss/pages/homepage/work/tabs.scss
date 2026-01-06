@@ -1,0 +1,110 @@
+@use '../../../mixins/respond-to.scss' as *;
+
+.tabs {
+    margin-top: -59px;
+    padding-bottom: 100px;
+
+    @include respond-to(tablet-l) {
+        margin-top: unset;
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 120px;
+
+        @include respond-to(tablet-l) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__tab {
+        width: 100%;
+        height: 154px;
+        background: #fff;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+        transition: .25s ease;
+
+        @include respond-to(tablet-l) {
+            height: 120px;
+        }
+
+        path {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 12px;
+            fill: #ff5a3c;
+            transition: fill .25s ease;
+        }
+
+        &--active {
+            background: #ff5a3c;
+            color: #fff;
+            box-shadow: (0 4px 4px -4px rgba(30, 33, 44, .5),
+                    0 12px 10px -6px rgba(255, 90, 48, .8));
+
+            path {
+                fill: #fff;
+            }
+
+            span {
+                color: #fff;
+            }
+        }
+    }
+
+    &__icon {
+        max-width: fit-content;
+        display: block;
+        margin: 0 auto 16px;
+    }
+
+    &__label {
+        font-size: 16px;
+        font-weight: 700;
+        color: #9A9CA5;
+    }
+
+
+    &__panel {
+        display: none;
+
+        &--active {
+            display: block;
+            text-align: center;
+        }
+
+        &-projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 61px;
+
+            @include respond-to(laptop-m) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @include respond-to(tablet-l) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .load-button {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 700;
+            color: #424551;
+            cursor: pointer;
+
+            img {
+                margin-right: 20px;
+            }
+        }
+    }
+}
