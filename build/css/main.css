@@ -1054,6 +1054,9 @@ pre {
   padding: 80px 0 122px;
   background-color: #fff;
 }
+.partners-pt {
+  padding-top: 188px;
+}
 .partners.grey-theme {
   background-color: #F4F5F6;
 }
@@ -1761,6 +1764,9 @@ pre {
   background-color: #F4F5F6;
   margin-bottom: -178px;
   padding-top: 66px;
+}
+.testimonials-pt {
+  padding-top: 84px;
 }
 .testimonials__title {
   font-size: 46px;

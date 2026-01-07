@@ -18,10 +18,14 @@ html(lang="en")
         +hero(heroData.work)
 
         include ./tabs.pug
+        include ../../../partials/components/testimonials.pug
+        include ./parthners.pug
 
         include ../../../partials/components/form.pug
         include ../../../partials/components/footer.pug
 
+        script(src='https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js')
+        script(type="module", src=`${paths.js}/homepage/parthnersSwiper.js`)
         script(type="module", src=`${paths.js}/work/index.js`) 
         script(type="module", src=`${paths.js}/work/loadCards.js`) 
 
