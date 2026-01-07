@@ -1005,6 +1005,9 @@ pre {
   top: 0;
   padding: 152px 0 0 0;
 }
+.hero__content--pos-static {
+  position: static;
+}
 @media (max-width: 768px) {
   .hero__content {
     padding: 100px 0 0 0;
