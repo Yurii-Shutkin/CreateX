@@ -1,13 +1,14 @@
-mixin hero(content, className="hero")
+mixin hero(content)
     .hero
         if content.imgUrl
             img(src=content.imgUrl, alt="hero-img", class="hero__bg")
         .container 
-            .hero__content.hero__content--pos-static
+            .hero__content(class= content.className)
                 .hero__breadcrumbs-wrap
                     span.hero__breadcrumbs= content.breadcrumbs 
                     span.hero__breadcrumbs.hero__breadcrumbs--active= content.activeBreadcrumb
                 h1.hero__title= content.title
                 .hero__desc= content.desc
+                block 
 
         

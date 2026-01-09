@@ -1,11 +1,23 @@
 @use 'sass:map';
 @use '../base/vars' as *;
+@use '../mixins/respond-to.scss' as *;
 
 .form {
     padding: 80px 0;
     background-image: url('/img/homepage/form/form-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include respond-to(mobile) {
+        background-image: none;
+        padding: 0;
+    }
+
+    .container {
+        @include respond-to(mobile) {
+            padding: 0;
+        }
+    }
 
     &__wrap {
         border: 1px solid red;
@@ -19,6 +31,10 @@
             0 4px 4px -4px #1e212c05,
             0 12px 10px -6px #1e212c08;
         margin-left: auto;
+
+        @include respond-to(mobile) {
+            border: none;
+        }
     }
 
     &__title {

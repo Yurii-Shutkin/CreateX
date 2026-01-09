@@ -1,6 +1,13 @@
 @use '../../mixins/respond-to.scss' as *;
 
 .feedback {
+
+    .container {
+        @include respond-to(mobile) {
+            padding: 0;
+        }
+    }
+
     &__title {
         margin-bottom: 40px;
 

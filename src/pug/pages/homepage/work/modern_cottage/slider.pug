@@ -1,0 +1,27 @@
+include ../../../../_paths.pug
+
+.section-gallery
+    .gallery
+        .swiper.gallery-main
+            .swiper-wrapper
+                each i in [1,2,3,4]
+                    .swiper-slide
+                        img(
+                            src=`${paths.img.img}/modern-cottage/slide-${i}.jpg`,
+                            alt=`slide ${i}`
+                        )
+            .swiper-controls
+                button.round-btn.round-btn--left.btn-prev
+                    img(src=`${paths.img.icons}/slider-arrow.svg`, alt="arrow")
+                button.round-btn.round-btn--right.btn-next
+                    img(src=`${paths.img.icons}/slider-arrow.svg`, alt="arrow")
+
+        .swiper.gallery-thumbs
+            .swiper-wrapper
+                each i in [1,2,3,4]
+                    .swiper-slide
+                        img(
+                            src=`${paths.img.img}/modern-cottage/slide-${i}.jpg`,
+                            alt=`thumb ${i}`
+                        )
+

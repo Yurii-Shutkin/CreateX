@@ -5,6 +5,14 @@
     margin-bottom: -178px;
     padding-top: 66px;
 
+    @include respond-to(laptop-l) {
+        margin-bottom: unset;
+    }
+
+    @include respond-to(mobile) {
+        padding-top: 0;
+    }
+
     &-pt {
         padding-top: 84px;
     }

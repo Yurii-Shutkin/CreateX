@@ -53,10 +53,34 @@
     <script type="module" src="/js/homepage/main.js"></script>
         <div class="hero">
           <div class="container"> 
-            <div class="hero__content hero__content--pos-static">
+            <div class="hero__content hero__content--static">
               <div class="hero__breadcrumbs-wrap"><span class="hero__breadcrumbs">Homepage / Work / </span><span class="hero__breadcrumbs hero__breadcrumbs--active">Modern Cottage</span></div>
               <h1 class="hero__title">Modern Cottage</h1>
               <div class="hero__desc"></div>
+              <div class="section-gallery">
+                <div class="gallery">
+                  <div class="swiper gallery-main">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="/img/modern-cottage/slide-1.jpg" alt="slide 1"></div>
+                      <div class="swiper-slide"><img src="/img/modern-cottage/slide-2.jpg" alt="slide 2"></div>
+                      <div class="swiper-slide"><img src="/img/modern-cottage/slide-3.jpg" alt="slide 3"></div>
+                      <div class="swiper-slide"><img src="/img/modern-cottage/slide-4.jpg" alt="slide 4"></div>
+                    </div>
+                    <div class="swiper-controls">
+                      <button class="round-btn round-btn--left btn-prev"><img src="/img/icons/slider-arrow.svg" alt="arrow"></button>
+                      <button class="round-btn round-btn--right btn-next"><img src="/img/icons/slider-arrow.svg" alt="arrow"></button>
+                    </div>
+                  </div>
+                  <div class="swiper gallery-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="/img/modern-cottage/slide-1.jpg" alt="thumb 1"></div>
+                      <div class="swiper-slide"><img src="/img/modern-cottage/slide-2.jpg" alt="thumb 2"></div>
+                      <div class="swiper-slide"><img src="/img/modern-cottage/slide-3.jpg" alt="thumb 3"></div>
+                      <div class="swiper-slide"><img src="/img/modern-cottage/slide-4.jpg" alt="thumb 4"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -166,6 +190,6 @@
     </footer>
     <script type="module" src="/js/components/footer.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script type="module" src="/js/work/index.js"> </script>
+    <script type="module" src="/js/work/modern-cottage/slider.js"> </script>
   </body>
 </html>

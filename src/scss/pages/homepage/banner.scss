@@ -5,6 +5,7 @@
 .banner {
     color: map.get($colors, white);
     margin-bottom: 125px;
+    margin-top: 92px;
 
     @include respond-to(tablet-l) {
         margin-bottom: 80px;

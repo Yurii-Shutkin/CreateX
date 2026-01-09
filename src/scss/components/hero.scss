@@ -3,11 +3,10 @@
 .hero {
     position: relative;
     background-color: #F4F5F6;
-    z-index: -1;
+    height: fit-content;
 
     @include respond-to(tablet-l) {
-        height: 431px;
-        aspect-ratio: 16 / 9;
+        height: auto;
     }
 
     @include respond-to(tablet) {
@@ -17,15 +16,28 @@
     &__bg {
         position: relative;
         margin-left: auto;
-        z-index: -1;
+        width: 100%;
+        height: 100%;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     &__content {
-        position: absolute;
         top: 0;
         padding: 152px 0 0 0;
 
-        &--pos-static {
+        &--absolute {
+            position: absolute;
+        }
+
+        &--static {
             position: static;
         }
 
