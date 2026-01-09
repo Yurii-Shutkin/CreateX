@@ -29,6 +29,8 @@
     }
 
     &__leftside {
+        margin-bottom: -61px;
+
         @include respond-to(tablet) {
             display: none;
         }

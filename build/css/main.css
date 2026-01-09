@@ -2930,6 +2930,9 @@ pre {
 .decisions__leftside, .decisions__rightside {
   margin: 0 auto;
 }
+.decisions__leftside {
+  margin-bottom: -61px;
+}
 @media (max-width: 576px) {
   .decisions__leftside {
     display: none;

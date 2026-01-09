@@ -18,6 +18,9 @@ html(lang="en")
         +hero(heroData.modernCottage)
             include ./slider.pug
         include ./decisions.pug
+       
+        include ../../../../partials/components/related-projects.pug
+        
         
 
         include ../../../../partials/components/form.pug
@@ -25,3 +28,5 @@ html(lang="en")
 
         script(src='https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js')
         script(type="module" src=`${paths.js}/work/modern-cottage/slider.js`) 
+        script(type="module", src=`${paths.js}/homepage/projectsSwiper.js`)
+
