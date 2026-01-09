@@ -1,0 +1,65 @@
+@use '../../../../mixins/respond-to.scss' as *;
+
+.decisions {
+    background-color: #F4F5F6;
+    padding-top: 76px;
+    margin-bottom: -60px;
+
+    @include respond-to(laptop-l) {
+        margin-bottom: 0px;
+        padding-bottom: 60px;
+    }
+
+    @include respond-to(mobile) {
+        padding-top: 20px;
+    }
+
+    &__wrap {
+        display: flex;
+        gap: 135px;
+
+        @include respond-to(laptop-l) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__leftside,
+    &__rightside {
+        margin: 0 auto;
+    }
+
+    &__leftside {
+        @include respond-to(tablet) {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-size: 46px;
+        margin-bottom: 69px;
+
+        @include respond-to(mobile) {
+            font-size: 27px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__desc-item {
+        display: flex;
+        margin-bottom: 26px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        img {
+            margin-right: 16px;
+        }
+
+        span {
+            @include respond-to(mobile) {
+                font-size: 14px
+            }
+        }
+    }
+}
