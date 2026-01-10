@@ -2,7 +2,7 @@ mixin parthners (content, titleKey, limit, mode, desc)
     section.partners.partners-pt(class= mode)
         .container
             h2.partners__title= content.title[titleKey]
-            span.partners__decs= desc
+            span.partners__desc= desc
             .partners__box
                 if content.icons
                     each iconCode in content.icons.slice(0, limit)

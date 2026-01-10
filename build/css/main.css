@@ -1105,9 +1105,18 @@ pre {
     margin-bottom: 39px;
   }
 }
+.partners__desc {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #787A80;
+}
 .partners__box {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 70px;
 }
 @media (max-width: 1200px) {
   .partners__box {

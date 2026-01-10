@@ -35,9 +35,19 @@
         }
     }
 
+    &__desc {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 18px;
+        color: #787A80;
+    }
+
     &__box {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 70px;
 
         @include respond-to(laptop-m) {
             display: grid;
