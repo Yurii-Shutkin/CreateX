@@ -1501,6 +1501,9 @@ pre {
     margin-bottom: 40px;
   }
 }
+.target .grey {
+  background-color: #F4F5F6;
+}
 .target__title {
   font-size: 46px;
   margin-bottom: 32px;
