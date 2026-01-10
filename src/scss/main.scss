@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "base/reset" as *;
 @use "base/vars" as vars;
-@use "mixins";
+@use "mixins/respond-to.scss" as *;
 @use "components";
 
 @use './pages/homepage/main.scss';
@@ -27,4 +27,8 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 30px;
+
+    @include respond-to(mobile) {
+        padding: 0 15px;
+    }
 }

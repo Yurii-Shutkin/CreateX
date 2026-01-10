@@ -624,6 +624,7 @@ pre {
 @media (max-width: 425px) {
   .form__wrap {
     border: none;
+    padding: 52px 20px 47px;
   }
 }
 .form__title {
@@ -1009,8 +1010,8 @@ pre {
 .hero__bg {
   position: relative;
   margin-left: auto;
-  width: 100%;
   height: 100%;
+  min-height: 350px;
 }
 .hero__bg img {
   position: absolute;
@@ -1319,6 +1320,7 @@ pre {
 }
 .banner__slides {
   position: relative;
+  z-index: 0;
 }
 .banner__img-wrap {
   position: relative;
@@ -2964,6 +2966,154 @@ pre {
   }
 }
 
+.results {
+  padding: 120px 0;
+}
+@media (max-width: 425px) {
+  .results {
+    padding: 60px 0;
+  }
+}
+.results__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.results__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+}
+.results__icon {
+  margin-bottom: 26px;
+}
+.results__stats {
+  font-size: 46px;
+  font-weight: 700;
+  color: #FF5A30;
+  margin-bottom: 15px;
+}
+.results__desc {
+  font-size: 14px;
+  color: #1E212C;
+}
+
+.quotes {
+  border-radius: 4px;
+  padding-bottom: 261px;
+}
+@media (max-width: 1440px) {
+  .quotes {
+    padding-bottom: 161px;
+  }
+}
+@media (max-width: 425px) {
+  .quotes {
+    padding-bottom: 60px;
+  }
+}
+.quotes__wrap {
+  position: relative;
+}
+@media (max-width: 1440px) {
+  .quotes__wrap {
+    position: static;
+  }
+}
+.quotes__img {
+  position: relative;
+  bottom: -141px;
+}
+@media (max-width: 1440px) {
+  .quotes__img {
+    position: static;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+}
+.quotes__card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 102px 105px 71px 135px;
+  box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04);
+}
+@media (max-width: 1440px) {
+  .quotes__card {
+    position: static;
+  }
+}
+@media (max-width: 768px) {
+  .quotes__card {
+    padding: 102px 30px 71px 60px;
+  }
+}
+@media (max-width: 768px) {
+  .quotes__card {
+    padding: 60px 15px 40px 30px;
+  }
+}
+.quotes__text {
+  position: relative;
+  width: 100%;
+  max-width: 495px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1E212C;
+  line-height: 150%;
+  margin-bottom: 51px;
+}
+@media (max-width: 1440px) {
+  .quotes__text {
+    max-width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .quotes__text {
+    font-size: 16px;
+  }
+}
+.quotes__text p {
+  margin-bottom: 30px;
+}
+.quotes__text p:last-child {
+  margin-bottom: 0;
+}
+.quotes__text::before {
+  position: absolute;
+  left: -58px;
+  content: "";
+  width: 100%;
+  height: 20px;
+  background-image: url("../img/about/icons/braces-icon.svg");
+  background-repeat: no-repeat;
+}
+@media (max-width: 425px) {
+  .quotes__text::before {
+    left: -35px;
+  }
+}
+.quotes__sign-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quotes__auhtor .name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1E212C;
+  margin-bottom: 11px;
+}
+.quotes__auhtor .position {
+  font-size: 14px;
+  color: #787A80;
+}
+
 html {
   width: 100%;
   overflow-x: hidden;
@@ -2983,4 +3133,9 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 30px;
+}
+@media (max-width: 425px) {
+  .container {
+    padding: 0 15px;
+  }
 }
