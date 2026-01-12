@@ -38,7 +38,7 @@
     &__desc {
         display: block;
         width: fit-content;
-        margin: 0 auto;
+        margin: 0 auto 78px;
         font-size: 18px;
         color: #787A80;
     }
@@ -47,7 +47,8 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 70px;
+        column-gap: 70px;
+        row-gap: 40px;
 
         @include respond-to(laptop-m) {
             display: grid;
