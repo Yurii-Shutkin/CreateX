@@ -3452,6 +3452,32 @@ pre {
   text-decoration: none;
 }
 
+.world-map {
+  padding: 86px 0 120px 0;
+  background-color: #F4F5F6;
+}
+@media (max-width: 425px) {
+  .world-map {
+    padding: 30px 0;
+  }
+}
+.world-map__title {
+  font-size: 46px;
+  font-weight: 700;
+  text-align: center;
+  color: #1E212C;
+  margin-bottom: 61px;
+}
+@media (max-width: 425px) {
+  .world-map__title {
+    font-size: 30px;
+  }
+}
+.world-map__img-wrap {
+  width: fit-content;
+  margin: 0 auto;
+}
+
 html {
   width: 100%;
   overflow-x: hidden;
