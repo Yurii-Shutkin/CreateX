@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   </head>
   <body> 
     <header class="header">
@@ -119,6 +120,84 @@
             </div>
           </div>
         </div>
+    <section class="history">
+      <div class="container">
+        <h2 class="history__title">Our history</h2>
+        <div class="history__inner">
+          <!-- Левая колонка: Таймлайн-->
+          <div class="history__timeline">
+            <div class="swiper history-timeline">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><span class="history__date">Present</span></div>
+                <div class="swiper-slide"><span class="history__date">March 2019</span></div>
+                <div class="swiper-slide"><span class="history__date">November 2018</span></div>
+                <div class="swiper-slide"><span class="history__date">July 2015</span></div>
+                <div class="swiper-slide"><span class="history__date">August 2010</span></div>
+                <div class="swiper-slide"><span class="history__date">February 2007</span></div>
+                <div class="swiper-slide"><span class="history__date">May 2004</span></div>
+                <div class="swiper-slide"><span class="history__date">October 2001</span></div>
+                <div class="swiper-slide"><span class="history__date">June 2000</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="history__content">
+            <div class="swiper history-content">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="history__slide"><img class="history__image" src="/img/modern-cottage/slide-1.jpg" alt="slide">
+                    <p class="history__text">Bcelerisque dapibus pharetra nibh semper iaculis...</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history__slide"><img class="history__image" src="/img/modern-cottage/slide-2.jpg" alt="slide">
+                    <p class="history__text">Integer et morbi. Maecenas sed quis...</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history__slide"><img class="history__image" src="/img/modern-cottage/slide-3.jpg" alt="slide">
+                    <p class="history__text">Bcelerisque dapibus. Eu nec vitae...</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history__slide"><img class="history__image" src="/img/modern-cottage/slide-4.jpg" alt="slide">
+                    <p class="history__text">Aperiam nihil, facilis, tempore magnam delectus labore deserunt deleniti aspernatur praesentium corrupti repudiandae, optio illum asperiores sint consequuntur ab nesciunt eum. Harum.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history__slide"><img class="history__image" src="/img/modern-cottage/slide-1.jpg" alt="slide">
+                    <p class="history__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam nihil, facilis, tempore magnam delectus labore deserunt deleniti aspernatur praesentium corrupti repudiandae, optio illum asperiores sint consequuntur ab nesciunt eum. Harum.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history__slide"><img class="history__image" src="/img/modern-cottage/slide-2.jpg" alt="slide">
+                    <p class="history__text">Aperiam nihil, facilis, tempore magnam delectus labore deserunt deleniti aspernatur praesentium</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history__slide"><img class="history__image" src="/img/modern-cottage/slide-3.jpg" alt="slide">
+                    <p class="history__text">aspernatur praesentium corrupti repudiandae, optio illum asperiores sint consequuntur ab nesciunt eum.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history__slide"><img class="history__image" src="/img/modern-cottage/slide-4.jpg" alt="slide">
+                    <p class="history__text">Bcelerisque dapibus. Eu nec vitae...</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="history__slide"><img class="history__image" src="/img/modern-cottage/slide-1.jpg" alt="slide">
+                    <p class="history__text">Rerum magnam nemo deleniti accusantium sunt repudiandae doloribus, dolore quisquam perferendis, non iusto molestiae?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="history__nav">
+            <button class="round-btn round-btn--left btn-prev"><img src="/img/icons/slider-arrow.svg" alt="arrow"></button>
+            <button class="round-btn round-btn--right btn-next"><img src="/img/icons/slider-arrow.svg" alt="arrow"></button>
+          </div>
+        </div>
+      </div>
+    </section>
         <section class="partners partners-pt grey-theme">
           <div class="container">
             <h2 class="partners__title">Our clients</h2><span class="partners__desc">We are supported by 12+ industry bodies and media partners</span>
@@ -315,5 +394,8 @@
       </div>
     </footer>
     <script type="module" src="/js/components/footer.js"> </script>
+    <script type="module" src="/js/about/activeFocus.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/about/history.js"></script>
   </body>
 </html>

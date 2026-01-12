@@ -3,6 +3,7 @@
 .quotes {
     border-radius: 4px;
     padding-bottom: 261px;
+    margin-bottom: 84px;
 
     @include respond-to(laptop-l) {
         padding-bottom: 161px;
