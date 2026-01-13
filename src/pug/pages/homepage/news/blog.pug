@@ -1,0 +1,105 @@
+include ../../../_paths.pug
+
+section.blog
+    .container
+        h2.blog__title Categories
+
+        ul.blog__categories
+            li.blog__category.blog__category--active
+                a(href="#") All News
+            li.blog__category
+                a(href="#") Company News
+            li.blog__category
+                a(href="#") Innovation
+            li.blog__category
+                a(href="#") Industry News
+            li.blog__category
+                a(href="#") Expert Tips
+            li.blog__category
+                a(href="#") Marketing
+
+        .blog__grid
+            article.blog-card(data-category="Industry News" data-page="1")
+                a.blog-card__image(href="#")
+                    img(src=`${paths.img.img}/news/image-1.png`, alt="banner")
+                .blog-card__content
+                    h3.blog-card__title
+                        a(href="#") How to Build Climate Change-Resilient Infrastructure
+                    .blog-card__meta
+                        span Industry News
+                        span June 24, 2020
+                        span 4 comments
+                    p.blog-card__text
+                        | Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis...
+
+            article.blog-card(data-category="Innovation" data-page="1")
+                a.blog-card__image(href="#")
+                    img(src=`${paths.img.img}/news/image-2.png`, alt="banner")
+                .blog-card__content
+                    h3.blog-card__title
+                        a(href="#") How Construction Can Help Itself
+                    .blog-card__meta
+                        span Innovation
+                        span June 12, 2020
+                        span No comments
+                    p.blog-card__text
+                        | Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus placerat vitae scelerisque. Rhoncus augue faucibus maecenas lacus...
+
+            article.blog-card(data-category="Expert Tips" data-page="1")
+                a.blog-card__image(href="#")
+                    img(src=`${paths.img.img}/news/image-3.png`, alt="banner")
+                .blog-card__content
+                    h3.blog-card__title
+                        a(href="#") The Difference Between a Digger and an Excavator
+                    .blog-card__meta
+                        span Expert Tips
+                        span May 16, 2020
+                        span No comments
+                    p.blog-card__text
+                        | Cras est nisi purus velit facilisi vitae, dolor. Lorem scelerisque integer duis et nulla lobortis cursus. Viverra erat sollicitudin praesent viverra...
+
+            article.blog-card(data-category="Expert Tips" data-page="1")
+                a.blog-card__image(href="#")
+                    img(src=`${paths.img.img}/news/image-4.png`, alt="banner")
+                .blog-card__content
+                    h3.blog-card__title
+                        a(href="#") Building Construction Hand Tools
+                    .blog-card__meta
+                        span Expert Tips
+                        span February 25, 2020
+                        span 1 comment
+                    p.blog-card__text
+                        | Tellus quis aliquet volutpat nunc pulvinar donec sed sapien. Vitae elit id dolor, tristique massa. Fames lobortis orci rutrum bibendum integer...
+
+            article.blog-card(data-category="Industry News" data-page="1")
+                a.blog-card__image(href="#")
+                    img(src=`${paths.img.img}/news/image-5.png`, alt="banner")
+                .blog-card__content
+                    h3.blog-card__title
+                        a(href="#") Top 10 Construction Trends
+                    .blog-card__meta
+                        span Industry News
+                        span January 14, 2020
+                        span No comments
+                    p.blog-card__text
+                        | Dignissim sed enim, eleifend morbi condimentum. Congue id quis vulputate dignissim eget. Ac ullamcorper nunc habitasse enim interdum platea...
+
+            article.blog-card(data-category="Company News" data-page="1")
+                a.blog-card__image(href="#")
+                    img(src=`${paths.img.img}/news/image-6.png`, alt="banner")
+                .blog-card__content
+                    h3.blog-card__title
+                        a(href="#") Types of Flooring Materials
+                    .blog-card__meta
+                        span Company News
+                        span December 1, 2019
+                        span No comments
+                    p.blog-card__text
+                        | Maecenas donec lacinia nunc, quam sit magnis mauris. Neque bibendum et mauris, aenean. Vel arcu amet in sem parturient  integer duis et nulla...
+
+        .blog__pagination
+            a.blog__page.blog__page--active(href="#") 1
+            a.blog__page(href="#") 2
+            a.blog__page(href="#") 3
+            a.blog__page(href="#") 4
+            a.blog__page.blog__page--next(href="#") →
