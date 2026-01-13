@@ -1,0 +1,22 @@
+include ../../_paths.pug
+
+mixin careerCard(data)
+  article.career-card(class=data.active ? 'career-card--active' : '')
+    .career-card__info
+      .career-card__meta
+        span.career-card__location
+          img(src=`${paths.img.img}/available-positions/icons/location-icon.svg`, alt=`location-icon`)
+          i.icon-location
+          | #{data.location}
+        span.career-card__type
+          img(src=`${paths.img.img}/available-positions/icons/clock-icon.svg`, alt=`clock-icon`)
+          
+          i.icon-clock
+          | #{data.type}
+
+      h3.career-card__title #{data.title}
+
+    a.button--outline.modal-button-cv(
+      href=data.url
+      class=data.active ? 'career-card__btn--filled' : ''
+    ) Apply Now

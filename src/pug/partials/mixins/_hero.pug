@@ -1,7 +1,7 @@
 mixin hero(content)
     .hero
         if content.imgUrl
-            img(src=content.imgUrl, alt="hero-img", class="hero__bg")
+            img(src=content.imgUrl, alt="hero-img", class=`hero__bg ${ content.class}`)
         .container 
             .hero__content(class= content.className)
                 .hero__breadcrumbs-wrap

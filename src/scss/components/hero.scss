@@ -25,6 +25,10 @@
         }
     }
 
+    .pt-95 {
+        padding-top: 95px;
+    }
+
     &__content {
         top: 0;
         padding: 152px 0 0 0;
@@ -60,9 +64,12 @@
     }
 
     &__title {
+        width: 100%;
+        max-width: 600px;
         font-size: 72px;
         color: #1E212C;
         margin-bottom: 29px;
+        text-transform: uppercase;
 
         @include respond-to(tablet-l) {
             font-size: 30px;
