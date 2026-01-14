@@ -1,0 +1,57 @@
+@use "../../../../mixins/respond-to.scss" as *;
+
+.news__form {
+    padding: 67px 0 180px;
+
+    @include respond-to(tablet) {
+        padding: 90px 0;
+    }
+
+    &-wrap {
+        width: 100%;
+        max-width: 810px;
+        margin: 0 auto;
+
+        .form__title {
+            font-size: 46px;
+            margin-bottom: 58px;
+
+            @include respond-to(tablet) {
+                font-size: 38px;
+            }
+
+            .form__input {
+                padding: 4px 16px;
+
+                @include respond-to(tablet) {
+                    padding: 16px;
+                }
+            }
+
+            .form__input-item textarea {
+                min-height: 100px;
+                padding: 17px;
+            }
+
+            .form__button {
+                margin: 23px auto 0;
+                padding: 18px 51px;
+            }
+        }
+
+        .flex-box {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 32px;
+
+            @include respond-to(tablet) {
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+
+            .form__input-item {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -29,6 +29,10 @@
         padding-top: 95px;
     }
 
+    .pb204 {
+        padding-bottom: 204px;
+    }
+
     &__content {
         top: 0;
         padding: 152px 0 0 0;
@@ -44,6 +48,23 @@
         @include respond-to(tablet-l) {
             padding: 100px 0 0 0;
         }
+
+        .w100 {
+            max-width: unset;
+        }
+
+        .ttcc {
+            text-transform: unset;
+        }
+
+        .fz64 {
+            font-size: 64px;
+
+            @include respond-to(laptop) {
+                font-size: 36px;
+            }
+        }
+
     }
 
     &__breadcrumbs {

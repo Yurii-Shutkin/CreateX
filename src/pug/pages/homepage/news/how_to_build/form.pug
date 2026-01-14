@@ -1,0 +1,30 @@
+include ../../../../_paths.pug
+
+.container 
+    .news__form
+        .news__form-wrap
+         h3.form__title Leave your comment
+         .form__input-wrap 
+            .flex-box
+                .form__input-item 
+                        label(for="name" class="form__label") Name*
+                        input.form__input(type="text", name="name", id="name", placeholder="Your name")
+                        img.form__input-img.form__input--success-img(src=`${paths.img.icons}/done-mark.svg` alt="success")
+                        img.form__input-img.form__input--danger-img(src=`${paths.img.icons}/danger-icon.svg` alt="danger")
+                        span.form__message.form__message--success Looks good!
+                        span.form__message.form__message--danger Please provide a valid input.`
+                .form__input-item 
+                        label(for="mail" class="form__label") Email
+                        input.form__input(type="email", name="mail", id="mail", placeholder="Your working email")
+                        img.form__input-img.form__input--success-img(src=`${paths.img.icons}/done-mark.svg` alt="success")
+                        img.form__input-img.form__input--danger-img(src=`${paths.img.icons}/danger-icon.svg` alt="danger")
+                        span.form__message.form__message--success Looks good!
+                        span.form__message.form__message--danger Please provide a valid input.
+            .form__input-item 
+                    label(for="message" class="form__label") Message*
+                    textarea.form__input.form__input--textarea(name="message", id="message", placeholder="Your message")
+                    img.form__input-img.form__input--success-img(src=`${paths.img.icons}/done-mark.svg` alt="success")
+                    img.form__input-img.form__input--danger-img(src=`${paths.img.icons}/danger-icon.svg` alt="danger")
+                    span.form__message.form__message--success Looks good!
+                    span.form__message.form__message--danger Please provide a valid input.
+            button(type="submit" class="form__button button") Post comment
