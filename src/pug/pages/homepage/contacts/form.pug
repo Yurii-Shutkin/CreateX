@@ -1,0 +1,83 @@
+include ../../../_paths.pug
+
+.container 
+    .contacts
+        h2.contacts__title Contact us
+        span.contacts__desc Please complete the form. Detailed information will help us to make a tuned offer.
+        .contacts__form
+            .contacts__leftside 
+                .contacts__img-wrap 
+                    img(src=`${paths.img.img}/contacts/image.jpg`, alt="image")
+            .contacts__rightside
+                .grid-box 
+                    .form__input-item 
+                        .field
+                            label(for="contacts-name" class="form__label") Name*
+                            input.form__input(type="text", name="name", id="contacts-name", placeholder="Your name")
+                        img.form__input-img.form__input--success-img(src=`${paths.img.icons}/done-mark.svg` alt="success")
+                        img.form__input-img.form__input--danger-img(src=`${paths.img.icons}/danger-icon.svg` alt="danger")
+                        span.form__message.form__message--success Looks good!
+                        span.form__message.form__message--danger Please provide a valid input.
+                    .form__input-item 
+                        .field
+                            label(for="project" class="form__label") I am interested in
+                            select.form__input(name="project", id="project")
+                                option(value="Interior Design") Interior Design
+                                option(value="Construction") Construction
+                                option(value="Project Development") Project Development
+                                option(value="Repairs") Repairs
+                    .form__input-item 
+                            .field
+                                label(for="contacts-phone" class="form__label") Phone*
+                                input.form__input(type="tel", name="phone", id="contacts-phone", placeholder="Your phone number")
+                            img.form__input-img.form__input--success-img(src=`${paths.img.icons}/done-mark.svg` alt="success")
+                            img.form__input-img.form__input--danger-img(src=`${paths.img.icons}/danger-icon.svg` alt="danger")
+                            span.form__message.form__message--success Looks good!
+                            span.form__message.form__message--danger Please provide a valid input.
+                    .form__input-item 
+                        .field
+                            label(for="locations" class="form__label") Location*
+                            select.form__input(name="locations", id="locations")
+                                option(value="", selected) Choose your location 
+                                option(value="Los Angeles") Los Angeles 
+                                option(value="New York") New York
+                                option(value="Nebrasca") Nebrasca
+                                option(value="California") California 
+                                option(value="Luisiana") Luisiana 
+                    .form__input-item 
+                        .field
+                            label(for="contacts-mail" class="form__label") Email
+                            input.form__input(type="email", name="mail", id="contacts-mail", placeholder="Your working email")
+                        img.form__input-img.form__input--success-img(src=`${paths.img.icons}/done-mark.svg` alt="success")
+                        img.form__input-img.form__input--danger-img(src=`${paths.img.icons}/danger-icon.svg` alt="danger")
+                        span.form__message.form__message--success Looks good!
+                        span.form__message.form__message--danger Please provide a valid input.
+                    .form__input-item 
+                        h6.input__title Preferred contact method
+                        .field-radio-wrap
+                            .field-radio
+                                input#html(type='radio' name='messenger' value='Phone' class='form-radio')
+                                label(for='html') Phone
+                            .field-radio
+                                input#css(type='radio' name='messenger' value='Email' class='form-radio')
+                                label(for='css') Email
+                            .field-radio
+                                input#javascript(type='radio' name='messenger' value='Viber' class='form-radio')
+                                label(for='javascript') Viber
+
+                .form__input-item 
+                    .field
+                        label(for="contacts-message" class="form__label") Message*
+                        textarea.form__input.form__input--textarea(name="message", id="contacts-message", placeholder="Your message")
+                    img.form__input-img.form__input--success-img(src=`${paths.img.icons}/done-mark.svg` alt="success")
+                    img.form__input-img.form__input--danger-img(src=`${paths.img.icons}/danger-icon.svg` alt="danger")
+                    span.form__message.form__message--success Looks good!
+                    span.form__message.form__message--danger Please provide a valid input.
+                .agreement  
+                    .form__input-item.form__input-item--checkbox
+                        .field
+                            input.form__input.form__input--checkbox(type="checkbox", name="agreement", id="agreement")
+                            label.form__label.form__label--checkbox(for="agreement") 
+                                span.box
+                                span.text I agree to receive communications from Createx Construction Bureau.
+                    button(type="submit" class="form__button button") send request

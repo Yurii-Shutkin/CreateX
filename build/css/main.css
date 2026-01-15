@@ -4126,6 +4126,131 @@ pre {
   width: 100%;
 }
 
+.contacts {
+  padding: 125px 0 113px 0;
+}
+@media (max-width: 576px) {
+  .contacts {
+    padding: 60px 0;
+  }
+}
+.contacts__title {
+  text-align: center;
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+@media (max-width: 425px) {
+  .contacts__title {
+    font-size: 28px;
+  }
+}
+.contacts__desc {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #787A80;
+  margin-bottom: 63px;
+}
+@media (max-width: 425px) {
+  .contacts__desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+.contacts__form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+@media (max-width: 1200px) {
+  .contacts__form {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1200px) {
+  .contacts__leftside {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .contacts__leftside {
+    display: none;
+  }
+}
+.contacts__rightside {
+  width: 100%;
+  max-width: 600px;
+}
+@media (max-width: 1200px) {
+  .contacts__rightside {
+    margin: 0 auto;
+  }
+}
+.contacts__rightside .grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 6px;
+  column-gap: 26px;
+  row-gap: 29px;
+  margin-bottom: 29px;
+}
+@media (max-width: 576px) {
+  .contacts__rightside .grid-box {
+    grid-template-columns: 1fr;
+  }
+}
+.contacts .form__input {
+  width: 100%;
+  padding: 18px 16px;
+}
+.contacts .form__input--textarea {
+  min-height: 128px;
+  margin-bottom: 40px;
+}
+.contacts .form__input-item--checkbox {
+  width: 100%;
+  max-width: 315px;
+  line-height: 1.74;
+  margin-top: 0;
+}
+@media (max-width: 576px) {
+  .contacts .form__input-item--checkbox {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.contacts .form__button {
+  margin: 0;
+  padding: 0 50px;
+}
+@media (max-width: 576px) {
+  .contacts .form__button {
+    margin: 0 auto;
+    padding: 16px 50px;
+  }
+}
+.contacts .field-radio {
+  margin-right: 29px;
+}
+.contacts .field-radio-wrap {
+  display: flex;
+}
+.contacts .input__title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.contacts .agreement {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .contacts .agreement {
+    flex-wrap: wrap;
+  }
+}
+
 html {
   width: 100%;
   overflow-x: hidden;
@@ -4137,6 +4262,10 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+input[type=radio] {
+  accent-color: #FF5A30;
 }
 
 .container {
