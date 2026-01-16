@@ -7,6 +7,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title  Contacts
         link(rel="stylesheet", href="/css/main.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css")
     body 
         include ../../../partials/data/_hero_data.pug
         include ../../../partials/mixins/_hero.pug
@@ -14,8 +15,8 @@ html(lang="en")
 
         +hero(heroData.contacts)
         include ./form.pug
+        include ./offices.pug
 
-        include ../../../partials/components/form.pug
         include ../../../partials/components/footer.pug
         
 

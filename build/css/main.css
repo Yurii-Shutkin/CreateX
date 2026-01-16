@@ -4251,6 +4251,96 @@ pre {
   }
 }
 
+.contacts-block {
+  padding: 83px 0 119px 0;
+  background-color: #F4F5F6;
+  font-family: Arial, sans-serif;
+}
+
+.contacts-header {
+  text-align: center;
+  margin-bottom: 69px;
+}
+.contacts-header .section-title {
+  font-size: 46px;
+  color: #1E212C;
+  margin-bottom: 32px;
+}
+.contacts-header .section-description {
+  color: #787A80;
+  margin: 0 auto;
+}
+
+.offices-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 123px;
+  flex-wrap: wrap;
+}
+.offices-grid .office-info {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+.offices-grid .office-info h3 {
+  text-wrap: nowrap;
+  font-size: 28px;
+  color: #1E212C;
+  margin-bottom: 32px;
+}
+.offices-grid .office-info address {
+  font-style: normal;
+}
+.offices-grid .office-info address p,
+.offices-grid .office-info address a {
+  line-height: 160%;
+}
+.offices-grid .office-info address p {
+  color: #1E212C;
+}
+.offices-grid .office-info address a {
+  display: block;
+  margin-bottom: 4px;
+  text-decoration: none;
+  color: #FF5A30;
+  text-decoration: underline;
+}
+.offices-grid .office-info address .map-link {
+  margin-bottom: 24px;
+}
+.offices-grid .office-info address .contact-link {
+  color: #1E212C;
+  text-decoration: none;
+}
+.offices-grid .office-info address .contact-link span {
+  color: #787A80;
+}
+
+.social-section {
+  text-align: center;
+}
+.social-section .social-title {
+  font-size: 46px;
+  color: #1E212C;
+  margin-bottom: 42px;
+}
+.social-section .social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 30px;
+  color: #787A80;
+  transition: color 0.3s ease;
+}
+.social-section .social-icons a:hover {
+  color: #FF5A30;
+}
+
+@media (max-width: 768px) {
+  .offices-grid {
+    flex-direction: column;
+  }
+}
 html {
   width: 100%;
   overflow-x: hidden;
