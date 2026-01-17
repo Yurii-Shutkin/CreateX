@@ -8,6 +8,8 @@ import browserSync from "browser-sync";
 
 import config from "../config.js";
 
+const isCI = process.env.CI === 'true';
+
 const imageOptim = () => {
   return src(`${config.src.assets.images}/**/*.{png,jpg,jpeg}`, {
     encoding: false,
