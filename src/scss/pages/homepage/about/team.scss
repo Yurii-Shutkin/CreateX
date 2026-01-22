@@ -1,7 +1,7 @@
 @use '../../../mixins/respond-to.scss' as *;
 
 .team {
-    padding: 64px 0 122px 0;
+    padding: 79px 0 122px 0;
 
     @include respond-to (mobile) {
         padding-bottom: 60px;

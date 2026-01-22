@@ -67,9 +67,12 @@
     &__navigation {
         position: absolute;
         right: 0;
+        top: 216px;
 
         @include respond-to(laptop-m) {
             left: 0;
+            top: auto;
+
         }
 
     }

@@ -7,7 +7,7 @@ mixin hero(content)
                 .hero__breadcrumbs-wrap
                     span.hero__breadcrumbs= content.breadcrumbs 
                     span.hero__breadcrumbs.hero__breadcrumbs--active= content.activeBreadcrumb
-                h1(class= `hero__title ${content.width100} ${content.ttcc} ${content.fz64}`)= content.title
+                h1(class= `hero__title ${content.width100} ${content.ttcc} ${content.fz64} ${content.titleClass}`)= content.title
                 .hero__desc= content.desc
                 block 
 

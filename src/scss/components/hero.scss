@@ -95,8 +95,17 @@
         max-width: 600px;
         font-size: 72px;
         color: #1E212C;
-        margin-bottom: 29px;
+        margin-bottom: 22px;
         text-transform: uppercase;
+        line-height: 1.25;
+
+        &--lite {
+            text-transform: none;
+            max-width: 100%;
+            font-size: 67px;
+            margin-top: -10px;
+            margin-bottom: 38px;
+        }
 
         @include respond-to(tablet-l) {
             font-size: 30px;

@@ -33,14 +33,14 @@
 
     &__navigation {
         position: relative;
-        right: 0;
+        right: -13px;
         margin-bottom: 43px;
         max-width: fit-content;
         margin-left: auto;
     }
 
     &__swiper {
-        margin-bottom: 84px;
+        margin-bottom: 80px;
 
         .swiper-wrapper {
             display: flex;
@@ -150,6 +150,8 @@
     &__footer {
         max-width: fit-content;
         margin: 0 auto;
+        display: flex;
+        align-items: center;
 
         @include respond-to(tablet-l) {
             margin: 0;

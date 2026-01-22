@@ -74,7 +74,8 @@
 
         &-title {
             font-size: 32px;
-            margin-bottom: 33px;
+            margin-bottom: 26px;
+            margin-top: 6px;
             color: #1E212C;
 
             @include respond-to(laptop) {

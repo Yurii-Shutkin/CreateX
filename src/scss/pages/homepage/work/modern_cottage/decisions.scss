@@ -16,7 +16,7 @@
 
     &__wrap {
         display: flex;
-        gap: 135px;
+        gap: 95px;
 
         @include respond-to(laptop-l) {
             flex-wrap: wrap;
@@ -25,7 +25,11 @@
 
     &__leftside,
     &__rightside {
-        margin: 0 auto;
+
+        @include respond-to(laptop-m) {
+            margin: 0 auto;
+        }
+
     }
 
     &__leftside {
